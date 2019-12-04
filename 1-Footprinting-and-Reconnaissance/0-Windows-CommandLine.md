@@ -56,7 +56,7 @@ Approximate round trip times in milli-seconds:
 
 Use the last command and add the `-f` parameter to not fragment on the ping packet and `-l` to set the frame size to `1500` bytes.
 
->`ping www.certifiedhacker.com -f -l 1500`
+`ping www.certifiedhacker.com -f -l 1500`
 
 Output:
 
@@ -108,7 +108,7 @@ Open a new window on your prompt or powershell and type:
 The system resolves the URL into its IP address and starts to trace the path to the destination. Here it takes 19 hops for the packet to reach the specified destination.
 
 You can use the help flag to show different options for the command:
->`tracert /?`
+`tracert /?`
 ***
 ## Let's check the life span of the packet.<br>
 Open a new window of your prompt or powershell and type:

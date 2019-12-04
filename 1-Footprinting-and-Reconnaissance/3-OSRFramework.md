@@ -10,6 +10,7 @@ Lab requirements:
 1. Log into **Kali Linux** machine and open a **Terminal** window..
 
 1. Update APT and install the OSRFramework:
+
 `apt update && apt -y install osrframework`
 
 ## Using usufy.py<br>
@@ -43,22 +44,11 @@ Usage: `searchfy.py -q <Page Name or Handler Name>`
 It will pull out all the user details who are subscribed to targeted social networking pages that are provided.
 
 ## OSRFramework CLI subcommands:
-
-## usufy.py
-* This tool that verifies if a username exists in 249 social platforms.
- 
-## mailfy.py
-* This module checks if a username has been registered in up to 22 email providers.
-
-## searchfy.py
-* This module looks for profiles using full names and other info in 7 platforms.
- 
-## domainfy.py 
-* This module checks the existence of a given domain in up to 879 different TLD.
-
-## phonefy.py
-* This module checks if a phone number has been linked to spam practices in 4 platforms.
- 
-## entify.py
-* This module looks for regular expressions using 13 patterns.
-
+Subcommands | Description 
+ --- | ---  
+usufy.py | This tool that verifies if a username exists in 249 social platforms.
+mailfy.py | This module checks if a username has been registered in up to 22 email providers.
+searchfy.py | This module looks for profiles using full names and other info in 7 platforms.
+domainfy.py | This module checks the existence of a given domain in up to 879 different TLD.
+phonefy.py | This module checks if a phone number has been linked to spam practices in 4 platforms.
+entify.py | This module looks for regular expressions using 13 patterns.

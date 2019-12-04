@@ -111,9 +111,11 @@ Name    Current Value  Required  Description
 SOURCE  default        yes       source of input (see 'show info' for details)
 ```
 Now set the SOURCE to:
+
 `options set SOURCE certifiedhacker.com`
 
 You can use the `input` command to see the target:
+
 `input`
 ```
 +---------------------+
@@ -124,9 +126,11 @@ You can use the `input` command to see the target:
 ```
 
 Run the module:
+
 `run`
 
 **Note: If your response is working properly but messy with a bunch of queries and values, just type `show hosts` to populate a better output.**
+
 `show hosts`<br>
 ...<br>
 _(This command will show a clean summary of resources discovered)_
@@ -134,13 +138,20 @@ _(This command will show a clean summary of resources discovered)_
 ## Brute-forcing hostnames
 You can use another modules to harvest more hosts, such as **brute_hosts**.
 
-1. **Exit** your current module:
+**Exit** your current module:
+
 `back` 
-2. Install the **brute_hosts** module:
+
+Install the **brute_hosts** module:
+
 `marketplace install recon/domain-hosts/brute_hosts`
-3. Load the module:
+
+Load the module:
+
 `modules load recon/domain-hosts/brute_hosts`
-4. Set the SOURCE to target domain:
+
+Set the SOURCE to target domain:
+
 `options set SOURCE certifiedhacker.com`
 
 By typing `info` you can see on this particular module, you can set your own hostnames wordlist. I recommend to use the default one that is pretty good.
@@ -158,7 +169,7 @@ _(keep in mind that will take a while)_
 ## Generate a report
 Now that you have harvested a number of hosts, you will prepare a report containing all the information.
 
-1. Install the **reporting module** to report in html format.
+Install the **reporting module** to report in html format.
 
 `marketplace install reporting/html`
 
@@ -173,10 +184,11 @@ reporting/pushpin
 reporting/xlsx
 reporting/xml
 ```
-2. Load the module:
+Load the module:
+
 `modules load reporting/html`
 
-3. To configure the reporting information, type `info` to see the values. 
+To configure the reporting information, type `info` to see the values. 
 ```
  Name      Current Value                                
  --------  -------------                                
@@ -187,13 +199,14 @@ reporting/xml
 ```
 You will need to assign these values, CREATOR, CUSTOMER and FILENAME.
 
-4. Set your name[CREATOR], customer name[CUSTOMER], path to export and the file name[FILENAME].
+Set your name[CREATOR], customer name[CUSTOMER], path to export and the file name[FILENAME].
 
 `options set CREATOR J0nDoe`<br>
 `options set CUSTOMER CertifiedHacker Network`<br>
 `options set FILENAME /root/Desktop/CE-Results.html`<br>
 
-5. Run the module to export:
+Run the module to export:
+
 `run`
 
 **The generated report is saved to to the Desktop.**
@@ -227,14 +240,23 @@ Gathering personal information involves discovering contact details such as emai
 Set a domain and perform footprinting on it to extract contact available in the domain.
 
 The module selected to perform this technique uses the ARIN Whois RWS to harvest POC data from whois queries for the given domain.
-1. Install and load the module:
+
+Install and load the module:
+
 `marketplace install recon/domains-contacts/whois_pocs`
+
 `modules load recon/domains-contacts/whois_pocs`
-2. Check the options required to run the module:
+
+Check the options required to run the module:
+
 `info`
-3. Set the SOURCE value to target domain:
+
+Set the SOURCE value to target domain:
+
 `options set SOURCE facebook.com`
-4. Run the module:
+
+Run the module:
+
 `run`
 ```
 ------------
@@ -261,14 +283,18 @@ We can search the existence of user profiles in various websites using the **rec
 
 Type `back` to return to the workspaces home.
 
-1. Install and load the module:
-`marketplace install recon/profiles-profiles/profiler`<br>
+Install and load the module:
+
+`marketplace install recon/profiles-profiles/profiler`
+
 `modules load recon/profiles-profiles/profiler`
 
-2. Set the SOURCE value (Target username):
+Set the SOURCE value (Target username):
+
 `options set SOURCE MarkZuckerberg`
 
-3. Run the module:
+Run the module:
+
 `run`
 
 The recon/profiles-profiles/profiler module searches for this username and returns the URL of the profile in various websites (found with the matching username).
