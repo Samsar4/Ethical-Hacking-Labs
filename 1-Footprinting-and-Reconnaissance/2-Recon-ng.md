@@ -11,6 +11,7 @@ Lab requirements:
 Objectives:
 * How to perform network recon.
 * Gather hosts related to a domain.
+* Personal Information Gathering.
 * Generate a report with harvested information.
 
 Recon-ng has a look and feel similar to the Metasploit Framework, reducing the learning curve for leveraging the framework.
