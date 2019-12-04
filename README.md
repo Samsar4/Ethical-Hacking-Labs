@@ -8,20 +8,20 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 ***
 ## Index
 1. Footprinting and Reconnaissance
-    * [Windows command line](https://duckduckgo.com)
-    * [Maltego basics](https://duckduckgo.com)
-    * [Recon-ng](https://duckduckgo.com)
-    * [OSRFramework](https://duckduckgo.com)
-    * [Metasploit](https://duckduckgo.com)
-    * [theHarvester](https://duckduckgo.com)
-    * [More Tools](https://duckduckgo.com)
+    * [Windows command line](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/0-Footprinting-Windows-CommandLine.md)
+    * [Maltego basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/1-Footprinting-Maltego.md)
+    * [Recon-ng](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/2-Footprinting-Recon-ng.md)
+    * [OSRFramework](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/3-Footprinting-OSRFramework.md)
+    * [Metasploit](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/4-Footprinting-Metasploit.md)
+    * [theHarvester](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/5-Footprinting-theHarvester.md)
+    * [Another tools for Recon](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/6-Footprinting-MoreTools.md)
 2. Scanning Networks
-    * [hping3](https://duckduckgo.com)
-    * [Detect OS's by TTL using Wireshark](https://duckduckgo.com)
-    * [Mega Ping](https://duckduckgo.com)
-    * [Nmap Basics](https://duckduckgo.com)
-    * [Avoid Detection with Nmap](https://duckduckgo.com)
-    * [Windows GUI Tools](https://duckduckgo.com)
+    * [hping3](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/0-ScanningNetworks-hping3.md)
+    * [Detect OS's by TTL using Wireshark](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/1-ScanningNetworks-TTL.md)
+    * [Mega Ping](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/2-ScanningNetworks-MegaPing.md)
+    * [Nmap Basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/3-ScanningNetworks-Nmap.md)
+    * [Avoid Detection with Nmap](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-ScanningNetworks-NmapDecoyIP.md)
+    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/5-ScanningNetworks-WindowsTools.md)
 3. Enumeration
     * [Soon... ]
 4. Vulnerability Analysis

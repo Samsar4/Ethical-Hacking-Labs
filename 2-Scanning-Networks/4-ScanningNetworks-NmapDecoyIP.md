@@ -9,7 +9,7 @@ Firewalls and IDS detect normal scanning attempts on the target network. However
 
 Open a new Terminal window on Kali and enter the target IP address (Windows).
 
->`nmap -f <Target IP Address>`
+`nmap -f <Target IP Address>`
 
 `-f`: Used to scan tiny fragment packets.
 ```
@@ -42,14 +42,14 @@ This command is used to transmit smaller packets instead of sending one complete
 
 This scan is very similar to the previous one but with **Maximum Transmission Unit** (`-mtu`) and `8` bytes of packets.
 
->`nmap -mtu 8 <Target IP Address>`
+`nmap -mtu 8 <Target IP Address>`
 
 If everything works, the results should be identical to the previous one.
 
 ## Decoying IP address
 This command is used to scan multiple decoy IP addresses. Nmap will send multiple packets with different IP addresses, along with your attacker's IP address.
 
->`nmap -D RND:10 <Target IP Address>`
+`nmap -D RND:10 <Target IP Address>`
 
 Again, the output is the same as previous outputs but on the target view is very different.
 

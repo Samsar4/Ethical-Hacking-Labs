@@ -32,7 +32,8 @@ Cisco Router IOS 12.4 | 255 | 4128
 ![Wireshark Start](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c68b799fcf3e60f75c0111fbcee309cd630def61/start-wireshark-1.png "Wireshark Start!")
 
 2. Go to the Ubuntu machine and start pinging the Windows 10 machine.
->`ping -c 10 <Target IP Address[Windows 10]>`
+
+`ping -c 10 <Target IP Address[Windows 10]>`
 
 ![Ubuntu Ping](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c68b799fcf3e60f75c0111fbcee309cd630def61/ping-ubuntu-2.png "Ubuntu Ping")
 
@@ -46,7 +47,7 @@ TTL value recorded as `64` means that the ICMP request came from a Linux-based m
 
 You will repeat the same process, but with the Windows 7 machine. Open the Prompt or Powershell and ping the Windows 10 machine running Wireshark.
 
->`ping <Target IP Address>`
+`ping <Target IP Address>`
 
 5. Go back to the Wireshark on Windows 10 machine and inspect again the same TTL information.
 

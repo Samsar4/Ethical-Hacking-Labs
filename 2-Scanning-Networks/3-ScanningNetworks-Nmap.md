@@ -33,17 +33,17 @@ Lab environment:
 Open the Terminal window and type `nmap -h` to list all the commands available. Since Nmap have so many options, you can use this [cheat sheet](https://nmapcookbook.blogspot.com/2010/02/nmap-cheat-sheet.html), [[2]](https://www.stationx.net/nmap-cheat-sheet/) to view some examples.
 
 
->`nmap -O <IP Range>`
+`nmap -O <IP Range>`
 
 The option `-O` is related to Operating System Detection.
 
 To specify the IP range you can use two methods:
 
 **Wildcard**:
->`nmap -O 10.0.2.*`
+`nmap -O 10.0.2.*`
 
 **Subnet notation:**
->`nmap -O 10.0.2.1/24`
+`nmap -O 10.0.2.1/24`
 
 Both do the same, with little differentiations, like the subnet notation is a little bit more faster than wildcard.
 
@@ -54,7 +54,7 @@ The Nmap scans the entire network and displays information for all the hosts, al
 ## Trace all the Sent and Received Packets
 **Select** one host that you scanned
 
->`nmap --packet-trace 10.0.2.23`
+`nmap --packet-trace 10.0.2.23`
 
 By issuing the `--packet-trace` command, Nmap sends some packets to the intended machine and receives packets in response to the sent packets. It prints a summary of every packet it sends and receives.
 
@@ -83,7 +83,7 @@ PORT      STATE SERVICE
 
 ## Identifying Services with TCP Null Scan
 
->`nmap -sN -T4 -A <Target IP address>`
+`nmap -sN -T4 -A <Target IP address>`
 
 `-sN`: TCP Null Scan.<br>
 `-T4`: Timing: (4)Aggressive mode speeds scans up by making the assumption that you are on a reasonably fast and reliable network.<br>
@@ -127,7 +127,7 @@ This is scan is the most basic of TCP scanning. The connect() system call provid
 
 Perform a TCP scan with a normal timing (`-T3`):
 
->`nmap -sT -T3 -A <Target IP address>`
+`nmap -sT -T3 -A <Target IP address>`
 
 `-sT`: TCP connect port scan (Default without root privilege).
 
@@ -138,7 +138,7 @@ Xmas Scan sends a TCP frame to a remote device with PSH, URG, and FIN flags set.
 
 **Note: The next scan will be on a Firewall-enabled machine (i.e., Windows Server 2012).**
 
->`nmap -sX -T4 <Target IP address>`
+`nmap -sX -T4 <Target IP address>`
 
 `-sX`: Sets the FIN, PSH, and URG flags, lighting the packet up like a Christmas tree
 ```
@@ -157,7 +157,8 @@ Nmap returns a result stating that the all ports are **opened/filtered, which me
 The ACK scan never locates an open port. It only provides a "filtered" or "unfiltered" disposition, because it never connects to an application to confirm an "open" state.
 
 This scan initiates ACK scan and displays the port disposition, as show below:
->`nmap -sA -v -T4 <Target IP address>`
+
+`nmap -sA -v -T4 <Target IP address>`
 ```
 Initiating ARP Ping Scan at 13:18
 Scanning 10.0.2.23 [1 port]
@@ -183,7 +184,8 @@ Attackers send an ACK probe packet with a random sequence number.
 
 ## 4. UDP Scan
 UDP scanning is performed to find any UDP ports on the target machine. If have any to determine their state (Open/Closed).
->`nmap -sU -T5 <Target IP address>`
+
+`nmap -sU -T5 <Target IP address>`
 ```
 ...
 Not shown: 986 open|filtered ports
@@ -209,7 +211,8 @@ PORT      STATE  SERVICE
 IDLE scan is an advanced scan method that performs a truly blind TCP port scan of the target (meaning no packets are sent to the target from your real IP address). Instead, a unique side-channel attack exploits predictable IP fragmentation ID sequence generation on the zombie host to glean information about the open ports on the target.
 
 In this example the zombie will be Windows Server 2012 machine and the target Windows 10 machine using port number 80 (or any port which you want to test).
->`nmap -Pn -p 80 -sI <IP address of the zombie> <Target IP address>`
+
+`nmap -Pn -p 80 -sI <IP address of the zombie> <Target IP address>`
 ```
 Idle scan using zombie 10.0.2.37 (10.0.2.37:80); Class: Incremental
 Nmap scan report for 10.0.2.23
@@ -230,7 +233,7 @@ Now instead of checking for individual systems, we will check for all the system
 
 `-sP`: Perform a Ping Only Scan
 
->`nmap -sP 10.0.2.*`
+`nmap -sP 10.0.2.*`
 ```
 Nmap scan report for 10.0.2.1
 Host is up (0.0011s latency).
@@ -256,8 +259,6 @@ Nmap done: 256 IP addresses (7 hosts up) scanned in 2.29 seconds
 ```
 Nmap scans the subnet and shows a list of alive systems as shown above. The result might vary in your lab environment.
 
-I also made a little tutorial in [how to make a quick Ping Sweep in Bash Script]("").
-
 # Avoiding Scanning Detection using Multiple Decoy IP Addresses
 The Nmap command `nmap -D RND:10` is the decoy option, that lets you scan using multiple decoy IP addresses.
 
@@ -269,7 +270,7 @@ Firewalls and IDS detect normal scanning attempts on the target network. However
 
 Open a new Terminal window on Kali and enter the target IP address (Windows).
 
->`nmap -f <Target IP Address>`
+`nmap -f <Target IP Address>`
 
 `-f`: Used to scan tiny fragment packets.
 ```
@@ -302,14 +303,14 @@ This command is used to transmit smaller packets instead of sending one complete
 
 This scan is very similar to the previous one but with **Maximum Transmission Unit** (`-mtu`) and `8` bytes of packets.
 
->`nmap -mtu 8 <Target IP Address>`
+`nmap -mtu 8 <Target IP Address>`
 
 If everything works, the results should be identical to the previous one.
 
 ## Decoying IP address
 This command is used to scan multiple decoy IP addresses. Nmap will send multiple packets with different IP addresses, along with your attacker's IP address.
 
->`nmap -D RND:10 <Target IP Address>`
+`nmap -D RND:10 <Target IP Address>`
 
 Again, the output is the same as previous outputs but on the target view is very different.
 

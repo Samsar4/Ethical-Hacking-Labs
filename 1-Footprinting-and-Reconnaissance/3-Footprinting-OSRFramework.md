@@ -10,13 +10,14 @@ Lab requirements:
 1. Log into **Kali Linux** machine and open a **Terminal** window..
 
 1. Update APT and install the OSRFramework:
->`apt update && apt -y install osrframework`
+`apt update && apt -y install osrframework`
 
 ## Using usufy.py<br>
 `usufy.py` checks for the existence of a profile for a given user details in different platforms.
 
-Usage: `usufy.py -n <target user name or profile name> -p twitter facebook youtube`.
->`usufy.py -n cehuser us -p twitter facebook youtube`
+Usage: **usufy.py -n <target user name or profile name> -p twitter facebook youtube.**
+
+`usufy.py -n cehuser us -p twitter facebook youtube`
 ```
 +-----------------------------+---------------+------------------+
 |         i3visio_uri         | i3visio_alias | i3visio_platform |
@@ -35,7 +36,7 @@ The **usufy.py** will search the user details in the mentioned platform and will
 
 Usage: `searchfy.py -q <Page Name or Handler Name>`
 
->`searchfy.py -q "ECCouncil"`<br>
+`searchfy.py -q "ECCouncil"`<br>
 
 ![alt text](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c07e9574a732bbd239c81d4b1e24bee3de20e62b/searchfy-eccouncil.png "serachfy eccouncil screenshot")
 

@@ -28,14 +28,14 @@ Diagnostic tool for displaying the route and measuring transit delays of packets
 **NOTE:**<br>
 **I strongly recommend you to use the -help command to specify all parameters of a given command**
 
->`ping -help`
+`ping -help`
 
 *** 
 ## Finding the IP address of http://www.certifiedhacker.com
 
 Open the **Command prompt** or **PowerShell** on Windows and type:
 
->`ping www.certifiedhacker.com`
+`ping www.certifiedhacker.com`
 
 The response should be similiar to the message below.<br>
 Note: The IP address may differ in your environment.
@@ -70,13 +70,13 @@ The propose here is to try different values until you reach the maximum frame si
 
 **Example:**
 
->` ping www.certifiedhacker.com -f -l 1450`<br>
+` ping www.certifiedhacker.com -f -l 1450`<br>
 _working_<br>
->` ping www.certifiedhacker.com -f -l 1475`<br>
+` ping www.certifiedhacker.com -f -l 1475`<br>
 _reached the limit_<br>
->` ping www.certifiedhacker.com -f -l 1473`<br>
+` ping www.certifiedhacker.com -f -l 1473`<br>
 _reached the limit_<br>
->` ping www.certifiedhacker.com -f -l 1472`<br>
+` ping www.certifiedhacker.com -f -l 1472`<br>
 _working_
 
 In conclusion, note the last two replies `1473` bytes and `1472` bytes shows the **maximum frame size** on this machine's network.
@@ -84,7 +84,7 @@ In conclusion, note the last two replies `1473` bytes and `1472` bytes shows the
 ## Investigate the TTL (Time to Live).
 Every frame on the network has their own TTL defined.<br> If the TTL reaches 0, the router discards the packet to prevent packet loss.
 
->`ping www.certifiedhacker.com -i 3`
+`ping www.certifiedhacker.com -i 3`
 
 ```
 Reply from 10.10.127.254: TTL expired in transit.
@@ -103,7 +103,7 @@ This command traceroutes the network configuration information of the target dom
 
 Open a new window on your prompt or powershell and type:
 
->`tracert www.certifiedhacker.com`
+`tracert www.certifiedhacker.com`
 
 The system resolves the URL into its IP address and starts to trace the path to the destination. Here it takes 19 hops for the packet to reach the specified destination.
 
@@ -113,7 +113,7 @@ You can use the help flag to show different options for the command:
 ## Let's check the life span of the packet.<br>
 Open a new window of your prompt or powershell and type:
 
->`ping www.certifiedhacker.com -i 2 -n 1`
+`ping www.certifiedhacker.com -i 2 -n 1`
 
 We are setting the TTL to `2` in  an attempt to check the life span of the packet and `-n` count of packet to `1`
 
@@ -128,7 +128,7 @@ There is a reply coming from IP address 162.241.216.11 with no packet loss.
 
 Let's set the TTL value to `3` to see what happens
 
->`ping www.certifiedhacker.com -i 3 -n 1`
+`ping www.certifiedhacker.com -i 3 -n 1`
 ```
 Pinging certifiedhacker.com [162.241.216.11] with 32 bytes of data:
 Reply from 10.10.127.254: TTL expired in transit.
@@ -140,7 +140,7 @@ Note there is a different IP address, the same one that we gather on the tracero
 
 Repeat this and increase the TTL value until reach the IP address from www.certifiedhacker.com that we trace routed before.
 
->`ping www.certifiedhacker.com -i 19 -n 1`
+`ping www.certifiedhacker.com -i 19 -n 1`
 ```
 Pinging certifiedhacker.com [162.241.216.11] with 32 bytes of data:
 Reply from 162.241.216.11: bytes=32 time=156ms TTL=40
@@ -162,13 +162,13 @@ Used for querying the DNS (Domain Name System), to obtain a domain name or IP ad
 
 Type in your prompt or powershell:
 
->`nslookup`
+`nslookup`
 
 **Note**: This command will launch a interactive mode, you can type ```help``` to list available commands! 
 
 For query IP address of a given domain, you need to set the `type` to `A` record, then enter the target domain:
 
->`> type=a`<br>
+`> type=a`<br>
 `> www.certifiedhacker.com`
 
 ```
@@ -190,8 +190,8 @@ The first two lines **dns.google** and **8.8.8.8** specifies that the result was
 The **Authoritative** is a name server that has the original source files of a domain zone files.
 To obtain the Authoritative name server, set the `type` to `CNAME` record and query the target:
 
->`set type=cname`<br>
->`certifiedhacker.com`
+`set type=cname`<br>
+`certifiedhacker.com`
 ```
 > set type=cname
 > certifiedhacker.com
@@ -211,7 +211,7 @@ The `CNAME` lookup is done directly against the domain's authoritative name serv
 
 With the authoritative name server, you can determine the IP address. To query IP address set the `type` to `A`, then type the **primary name server** displayed in your lab environment, in my case: ```ns1.bluehost.com```.
 
->`set type=a`<br>
+`set type=a`<br>
 `ns1.bluehost.com`
 ```
 > set type=a

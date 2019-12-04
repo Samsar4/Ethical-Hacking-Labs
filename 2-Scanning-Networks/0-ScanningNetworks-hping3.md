@@ -21,7 +21,8 @@ Login to Kali Linux and launch the Terminal.<br>
 Use `hping3 -h` to show all the commands. We will foccus on a couple of them so don't worry.
 
 Let's start!
->`hping3 -c 3 <Target IP address>`
+
+`hping3 -c 3 <Target IP address>`
 ```
 ...
 3 packets transmitted, 3 packets received, 0% packet loss
@@ -32,7 +33,8 @@ Note on the bottom of the output, the 3 packets were sent and received. You shou
 `-c` stands for packet count. Means that we only want to send three packets to the target machine.
 
 Next we will send a SYN flag scan with a port range.
->`hping3 --scan 1-3000 -S <Target IP address>`
+
+`hping3 --scan 1-3000 -S <Target IP address>`
 ```
 Scanning 10.0.2.15 (10.0.2.15), port 1-3000
 3000 ports to scan, use -V to see all the replies
@@ -53,7 +55,7 @@ The output shows the open ports in the target machine, i.e. Windows 10.
 ## UDP packet crafting
 To perform a UDP packet crafting in the target machine, type:
 
->`hping3 <Target IP address> --udp --rand-source --data 500`
+`hping3 <Target IP address> --udp --rand-source --data 500`
 
 Next go to Windows 10 machine and fire up the Wireshark to start capturing packets.
 
@@ -67,7 +69,8 @@ Observe the UDP and ICMP packets. Click the **UDP** packet and look inside, the 
 Launch the Wireshark on Windows machine again and leave it running.
 
 To send a TCP SYN request to the target machine, type:
->`hping3 -S <Target IP address> -p 80 -c 5`
+
+`hping3 -S <Target IP address> -p 80 -c 5`
 
 **This will transmit 5 packets request to victim machine through port 80.**
 
@@ -78,7 +81,8 @@ Switch to the target machine (Windows), and observe the TCP packets caputerd in 
 Next, stop the packet capture, and start a new capture again. Leave the Wireshark running.
 
 ## Perform TCP Flooding
->`hping3 <Target IP address> --flood`
+
+`hping3 <Target IP address> --flood`
 
 The `--flood` send packets as fast as possible, without taking care to show incoming replies.  
 

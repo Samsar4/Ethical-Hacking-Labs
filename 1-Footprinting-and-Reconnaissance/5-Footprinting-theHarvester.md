@@ -17,16 +17,18 @@ Objectives:
 
 ## Run theHarvester against a target
 To view all the commands option, type:
->`theHarvester -h`
+
+`theHarvester -h`
 
 Let's perform a full harvest on this target:
->`theHarvester -d certifiedhacker.com -l 300 -b all`
+
+`theHarvester -d certifiedhacker.com -l 300 -b all`
 
 On the `help` command you can see the meaning of these options, like `-d` stands for domain, and `-l` for limit the number of search results, and `-b` is the search engine/source.
 
 theHarvester may return too much information to go through, for better readability, you can write the output to an HTML file:
 
->`theHarvester -d certifiedhacker.com -l 300 -b all -f report`
+`theHarvester -d certifiedhacker.com -l 300 -b all -f report`
 
 The file will be exported in your home folder in Kali Machine.
 
