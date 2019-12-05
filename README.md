@@ -8,6 +8,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 ***
 ## Index
 1. Footprinting and Reconnaissance
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/--What-is-Footprinting.md)
     * [Windows command line](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/0-Windows-CommandLine.md)
     * [Maltego basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/1-Maltego-Basics.md)
     * [Recon-ng](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/2-Recon-ng.md)
@@ -16,6 +17,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [theHarvester](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/5-theHarvester.md)
     * [Another tools for Recon](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/6-OtherTools.md)
 2. Scanning Networks
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/--Scanning-a-Target-Network.md)
     * [hping3](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/0-hping3.md)
     * [Detect OS's by TTL using Wireshark](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/1-TTL.md)
     * [Mega Ping](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/2-MegaPing.md)
