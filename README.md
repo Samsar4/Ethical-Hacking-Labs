@@ -25,7 +25,11 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Avoid Detection with Nmap](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-NmapDecoyIP.md)
     * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/5-WindowsTools.md)
 3. Enumeration
-    * [Soon... ]
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/--What-is-Enumeration.md)
+    * [Enumeration with Nmap](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/0-Enumerating-with-Nmap.md)
+    * [SNMP Enumeration](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/1-SNMP-Enumeration.md)
+    * [Enum4Linux](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/2-Enum4linux-Win-and-Samba-Enumeration.md)
+    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/3-Windows-EnumerationTools.md)
 4. Vulnerability Analysis
     * [Soon... ]
 5. System Hacking
