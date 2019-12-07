@@ -3,7 +3,7 @@ Nmap (Zenmap is the official Nmap GUI) is a free, open-source(license) utility f
 
 Nmap is the most popular network-scanning utility, that most of security professionals use during security assessments. It supports various types of network-scanning techniques. During security assessment, you will be asked to perform network scanning using Nmap. Therefore, as a professional ethical hacker or a penetration tester, you will need to be confortable with Nmap to perform a network scan.
 
-Objectives:
+### Objectives:
 * Scan a whole Subnet.
 * Trace all the sent and received packets.
 * Perform a slow comprehensive scan.
@@ -18,7 +18,7 @@ Objectives:
   * IDLE Scan
 * Avoiding Scanning Detection 
 
-Lab environment:
+### Requirements:
 * Windows server 2012 machine.
 * Windows 10 machine.
 * Ubuntu [Metasploitable](https://information.rapid7.com/download-metasploitable-2017.html) machine.

@@ -5,10 +5,10 @@ Official site: http://www.magnetosoft.com/product/megaping/download
 
 With MegaPing utility, you can detect live hosts, open ports of the system in the network. You can also perform various network troubleshooting activities with the help of network utilities integrated into it, such as DNS lookup name, DNS list hosts, Finger, host monitor, IP scanner, NetBios scanner, network time synchronizer, ping, port scanner, share scanner, traceroute, and whois.
 
-Objectives:
+### Objectives:
 * Detect live hosts and open ports of systems in the network.
 
-Requirements:
+### Requirements:
 * Windows 7, 8 or 10.
 * Windows Server 2012/2016 (target).
 

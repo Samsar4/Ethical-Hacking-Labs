@@ -1,10 +1,10 @@
 # Open Source Intelligence Gathering using OSRFramework
 OSRFramework is a set of libraries to perform Open Source Intelligence tasks. They include references to a bunch different applications related to username checking, DNS lookups, information leaks research, deep web search, regular expressions extraction, and many others.
 
-Objectives:
+### Objectives:
 * Demonstrate how to identify usernames of the target on different social media platforms.
 
-Lab requirements:
+### Requirements:
 * Kali Linux virtual machine.
 ***
 1. Log into **Kali Linux** machine and open a **Terminal** window..

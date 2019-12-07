@@ -3,10 +3,10 @@ Hping3 is a scriptable program that uses the [Tcl language](https://www.tcl.tk/a
 
 During network scanning, your first task will be to scan the target network to determine all possible open ports, live hosts, and running services. Knowledge of packet-crafting techniques may help you to scan the network beyond the firewall or IDS.
 
-Objectives:
+### Objectives:
 * How to perform network scanning and packet crafting using hping3 commands.
 
-Lab environment:
+### Requirements:
 * Kali Linux (Attacker machine)
 * Windows 10 (Target machine) 
 

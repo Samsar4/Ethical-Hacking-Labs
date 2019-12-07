@@ -5,10 +5,10 @@ https://github.com/lanmaster53/recon-ng
 
 * Version: v5.0.1
 
-Lab requirements:
+### Requirements:
 * Kali Linux virtual machine
 
-Objectives:
+### Objectives:
 * How to perform network recon.
 * Gather hosts related to a domain.
 * Personal Information Gathering.

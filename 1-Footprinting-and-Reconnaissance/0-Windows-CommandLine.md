@@ -2,13 +2,13 @@
 
 The objective of this tutorial is teach the basics of Footprinting methodologies, used for ethical-hackers and pentesters. 
 
-## Lab prerequisites
+### Requirements 
 * Virtual environment
 * Windows 8.1/10 
 * Windows Server 2012 or 2016
 * Basics of networking 
 
-## Objective
+### Objectives
 * Use ping command to find the IP address of target domain.
 * Use ping command to emulate the traceroute (tracert command).
 * Discover the maximum frame size for the network.

@@ -9,10 +9,10 @@ Metasploit can be used to test the vulnerability of computer systems or to break
 ## Metasploit overview:
 Metasploit Framework is an open-source project that facilitates the task of attackers, exploit and payload writers. A major advantage of the framework is the moduler approach, allowing the combination of any exploit with any payload.
 
-Lab requirements:
+### Requirements:
 * Kali Linux virtual machine.
 
-Objectives:
+### Objectives:
 * How to identify vulnerabilities and information disclosures.
 * Extract accurate information about a network.
 ***

@@ -3,10 +3,10 @@ Identifying the OS used on the target host allows an attacker to figure out the 
 
 Capture the response generated from the target machine using packet-sniffing tools such as Wireshark and watch the TTL and TCP window size.
 
-Objectives:
+### Objectives:
 * Identify OS's by TTL and TCP window size using Wireshark.
 
-Requirements:
+### Requirements:
 * Linux Ubuntu machine.
 * Windows 7 machine.
 * Windows 10 machine (Target running Wireshark).

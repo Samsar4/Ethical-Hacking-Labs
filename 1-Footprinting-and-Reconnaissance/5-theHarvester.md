@@ -7,10 +7,10 @@ _Official repository:_ https://github.com/laramies/theHarvester
 ## Overview of theHarvester
 Has been developed in Python by Christian Martorella. It's a very helpful tool in the early stages of penetration test. Help to undestand the customer footprint on the internet. Some professionals also use theHarvester to review the information available to an attacker through the internet.
 
-Lab requirements:
+### Requirements:
 * Kali Linux virtual machine.
 
-Objectives:
+### Objectives:
 * Demonstrate how to identify vulnerabilities and information disclosures in search engines using theHarvester.
 * Extract email, subdomain names, virtual hosts(...) from the web sites.
 ***

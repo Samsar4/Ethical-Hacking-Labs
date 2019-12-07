@@ -1,10 +1,10 @@
 # Footprinting using Maltego
 Maltego is an open source in$$telligence and forensics application. It gathers information about a target and represents in an easily-understandable format.
 
-Lab requirements:
+### Requirements:
 * Kali Linux virtual machine
 
-Objectives:
+### Objectives:
 * Identify IP address
 * Identify Domain and Domain Name Schema
 * Identify Server Side Technology
