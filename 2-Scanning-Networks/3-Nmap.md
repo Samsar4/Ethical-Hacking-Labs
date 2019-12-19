@@ -1,4 +1,5 @@
 # Understanding the Basics of Network Scanning using Nmap
+![grid](https://miro.medium.com/max/1500/1*SGiVLHyikvLQEXVkt_Tg5w.jpeg)
 Nmap (Zenmap is the official Nmap GUI) is a free, open-source(license) utility for network exploration and security auditing.
 
 Nmap is the most popular network-scanning utility, that most of security professionals use during security assessments. It supports various types of network-scanning techniques. During security assessment, you will be asked to perform network scanning using Nmap. Therefore, as a professional ethical hacker or a penetration tester, you will need to be confortable with Nmap to perform a network scan.

@@ -5,8 +5,10 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 * Virtual environment (Virtual Box, VMWare, Hyper-V etc) 
 * Basic understanding of Linux and Windows. 
 * Basic understanding of Networking.
-***
-## Index
+
+The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. Google is always your best friend.  
+
+# Index
 1. Footprinting and Reconnaissance
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/--What-is-Footprinting.md)
     * [Windows command line](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/0-Windows-CommandLine.md)
