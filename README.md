@@ -39,8 +39,9 @@ The tutorials is very practical/hands-on and do not teach how network and system
     * [Playing with LLMNR / NBT-NS](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/0-LLMNR-NBT-NS.md)
     * [Dumping and Cracking SAM hashes](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/1-SAM-Hashes.md)
     * [Rainbow Tables](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/2-Rainbow-tables.md)
-    * [VNC Session](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-VNC-Session.md)
-    ...
+    * [Establishing a VNC Session](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-VNC-Session.md)
+    * [Escalating Privileges](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/4-Escalating-Privileges.md)
+    * [...]
 6. Malware Threats
     * [Soon... ]
 7. Sniffing

