@@ -4,6 +4,7 @@ Link-Local Multicast Name Resolution (LLMNR) and Netbios Name Service (NBT-NS) a
 When a DNS name server request fails, Link-Local Multicast Name Resolution(LLMNR) and Net-BIOS Name Service(NBT-NS) is used by Windows machines as a fallback. If the DNS name still remains unresolved, the windows performs an unauthenticated UDP broadcast to the whole network. Any masquerading machine, claiming to be the server then sends a response and capture the target's credentials during the authentication process.
 
 **LLMNR/NBT-NS Spoofing attack** is a classical internal network attack that still works, due to low awareness and the fact it's enabled by default in Windows.
+
 ![LLMNR spoofing](https://www.verifyit.nl/wp/wp-content/uploads/2016/12/llmnr_poison1.jpg)
 
 LLMNR and NBT-NS are enabled by default in Windows and can be used to extract the passwords hashes from a user. There is a good chance of acquiring the user credentials on a internal network.

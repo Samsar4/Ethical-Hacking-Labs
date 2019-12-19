@@ -33,9 +33,14 @@ The tutorials is very practical/hands-on and do not teach how network and system
     * [Enum4Linux](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/2-Enum4linux-Win-and-Samba-Enumeration.md)
     * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/3-Windows-EnumerationTools.md)
 4. Vulnerability Analysis
-    * [Soon... ]
+    * [Overview and Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/4-Vulnerability-Analysis/Overview-and-Tools.md) 
 5. System Hacking
-    * [Soon... ]
+    * [What is?](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--System-Hacking.md)
+    * [Playing with LLMNR / NBT-NS](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/0-LLMNR-NBT-NS.md)
+    * [Dumping and Cracking SAM hashes](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/1-SAM-Hashes.md)
+    * [Rainbow Tables](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/2-Rainbow-tables.md)
+    * [VNC Session](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-VNC-Session.md)
+    ...
 6. Malware Threats
     * [Soon... ]
 7. Sniffing

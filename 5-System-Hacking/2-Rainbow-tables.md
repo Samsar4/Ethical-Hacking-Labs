@@ -9,15 +9,14 @@ A rainbow table is a pre-computed table for reversing cryptographic hash functio
 ### Objectives
 * Short introduction to rainbow tables and use them to crack the hashes and obtain plain text passwords.
 
-### Requirements
-* Kali Linux virtual machine.
-
 ## Generate Rainbow Table
 To obtain rainbow tables you can [download](https://freerainbowtables.com/) or manually generate using `rtgen` that comes with `rainbowcrack` package.
 
-Install RainbowCrack:
+Install RainbowCrack CLI version:
 
 `sudo apt-get install rainbowcrack`
+
+**GUI** version: https://project-rainbowcrack.com/
 
 **Usage example**:
 `rtgen hash_algorithm charset plaintext_len_min plaintext_len_max table_index chain_len chain_num part_index`
@@ -42,7 +41,9 @@ To pause table generation, just press Ctrl+C and rtgen program will exit. Next t
 
 **This command takes hours to complete with ordinary processor.**
 
-After generating the rainbow table you need to sort it. Rainbowcrack comes with `rtsort` program, that sorts the rainbow chains by end point to make binary search possible.
+After generating the rainbow table you need to sort it. Rainbowcrack comes with `rtsort` program, that sorts the rainbow chains by end point to make binary search possible so the processor can access them quicker.
+
+`rtsort *.rt`
 
 ## Cracking
 To display the usage and options just type `rcrack`.
@@ -68,6 +69,14 @@ examples:
     ./rcrack . -h 5d41402abc4b2a76b9719d911017c592
     ./rcrack . -l hash.txt
 ```
+
+# L0phtCrack
+
+L0phtCrack is a password auditing tool that contains features such as scheduling, hash extraction from 64-bit Windows versions, multiprocessor algorithms, and network monitoring and decoding. It can import and crack UNIX password files from remote Windows machines.
+
+Free Trial: https://www.l0phtcrack.com/<br>
+Documentation: https://www.l0phtcrack.com/doc/
+
 
 ### Useful links:
 

@@ -1,6 +1,4 @@
 # Escalating Privileges
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Privilege_Escalation_Diagram.svg/1200px-Privilege_Escalation_Diagram.svg.png" alt="drawing" style="width:200px; display:block;margin-left:auto;
-margin-right:auto;"/>
 
 Privilege Escalation is the demonstration of misusing a bug, configuration imperfection, or design oversight in a working framework or programming application to increase lifted access to assets that are regularly shielded from an application or client.
 
