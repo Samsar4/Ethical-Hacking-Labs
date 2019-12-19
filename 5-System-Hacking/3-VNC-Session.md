@@ -38,16 +38,19 @@ VirusTotal aggregates many antivirus products and online scan engines to check f
 ## Share the malicious file on target
 Now create a directory to share this file with the target machine provide the permissions and copy the file from Desktop to shared location:
 
+Create a directory on html folder:<br>
 `mkdir /var/www/html/share/`<br>
+
+Change the mode for the share to **755**:<br>
 `chmod -R 755 /var/www/html/share/`<br>
+
+Change the ownership of that folder to **www-data**:<br>
 `chown -R www-data:www-data /var/www/html/share/`
 
-Now copy the malicious file to the shared location:
-
+Now copy the malicious file to the shared location:<br>
 `cp /root/Desktop/Test.exe /var/www/html/share/`
 
-Next, start the apache service:
-
+Next, start the apache service:<br>
 `service apache2 start`
 
 
@@ -104,3 +107,7 @@ This command will open a VNC session of the Target's machine as shown below:
 
 ![vnc](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/78278f30571b9988b108c92defcd91134886c404/vnc.png)
 
+Useful links:
+
+* [Metasploit Cheat Sheet - SANS](https://www.sans.org/security-resources/sec560/misc_tools_sheet_v1.pdf)
+* [Meterpreter Cheat Sheet](https://www.blueliv.com/downloads/Meterpreter_cheat_sheet_v0.1.pdf)
