@@ -67,7 +67,3 @@ The tutorials is very practical/hands-on and do not teach how network and system
     * [Soon... ]
 18. Cryptography
     * [Soon... ]
-***
-**Note** #0: The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. Google is always your best friend. 
-
-**Note** #1: Do not use those techniques to harm someone. Think before you type, understand what the f*** you doing, and of course with great power comes great responsibility.
