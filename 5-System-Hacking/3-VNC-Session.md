@@ -30,10 +30,12 @@ Saved as: /root/Desktop/Test.exe
 
 You can also try this by using the `msfconsole`. 
 
-To check the malicious file that you created, go to https://www.virustotal.com and upload the file.
+To check the malicious file that you created, go to https://nodistribute.com/ or https://antiscan.me and upload the file:
 
-![VirusTotal](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/06ada511ea568155b68bc18ea6255fe31007d217/virustotal.png)
-VirusTotal aggregates many antivirus products and online scan engines to check for viruses that the user's own antivirus may have missed, or to verify against any false positives.
+![AntiScan.Me](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/0e16bfcaba630b14ba1efa3ca24e061158247558/antiscan.png)
+
+
+This site will perform a scan over 20 AV softwares databases. **Do not upload your backdoors or any file to virusTotal.**
 
 ## Share the malicious file on target
 Now create a directory to share this file with the target machine provide the permissions and copy the file from Desktop to shared location:
