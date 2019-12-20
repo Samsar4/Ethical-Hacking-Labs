@@ -42,7 +42,7 @@ The tutorials is very practical/hands-on and do not teach how network and system
     * [Establishing a VNC Session](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-VNC-Session.md)
     * [Escalating Privileges](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/4-Escalating-Privileges.md)
     * [Hacking Windows with MS Word file](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/5-Hacking-Windows-with-Doc-file.md)
-    * [...]
+    * [Hacking Windows with Msf/Meterpreter - Post Exploitation](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/6-Hacking-Windows-with-Metasploit-PostExploitation.md)
 6. Malware Threats
     * [Soon... ]
 7. Sniffing
