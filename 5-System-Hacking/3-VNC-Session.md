@@ -113,3 +113,4 @@ Useful links:
 
 * [Metasploit Cheat Sheet - SANS](https://www.sans.org/security-resources/sec560/misc_tools_sheet_v1.pdf)
 * [Meterpreter Cheat Sheet](https://www.blueliv.com/downloads/Meterpreter_cheat_sheet_v0.1.pdf)
+* [Msfvenom Cheat Sheet](https://widesecurity.net/linux/msfvenom-cheat-sheet/)
