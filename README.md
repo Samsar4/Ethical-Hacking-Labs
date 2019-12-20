@@ -41,6 +41,7 @@ The tutorials is very practical/hands-on and do not teach how network and system
     * [Rainbow Tables](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/2-Rainbow-tables.md)
     * [Establishing a VNC Session](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-VNC-Session.md)
     * [Escalating Privileges](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/4-Escalating-Privileges.md)
+    * [Hacking Windows with MS Word file](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/5-Hacking-Windows-with-Doc-file.md)
     * [...]
 6. Malware Threats
     * [Soon... ]
