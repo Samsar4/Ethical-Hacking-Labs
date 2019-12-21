@@ -45,6 +45,7 @@ The tutorials is very practical/hands-on and do not teach how network and system
     * [Hacking Windows with Msf/Meterpreter - Post Exploitation](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/6-Hacking-Windows-with-Metasploit-PostExploitation.md)
     * [Hiding Data - NTFS streams](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/7-NTFS-Streams.md)
     * [Hiding Data - Steganography](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/8-Steganography.md)
+    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--WindowsTools.md)
 6. Malware Threats
     * [Soon... ]
 7. Sniffing
