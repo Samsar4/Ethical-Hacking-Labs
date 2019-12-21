@@ -19,7 +19,7 @@ Make sure the **C:\drive** file system is **NTFS** format. To check this, go to 
 1. Open Windows Explorer and create a **new folder** called **trick** inside the **C:** drive.
 
 2. Go to **C:\windows\system32** and copy the **calc.exe** to the **trick** folder.
-![Calc-copy](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/d860bf411205b62becd2120602ae5675559ffd1f/NTFS-calc-copy2.png)
+![Calc-copy](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/b1b0f3cef708249202b1679f71d1acd2588ac6fa/NTFS-calc-copy2.png)
 
 3. Launch the **command prompt** as Administrator, and navigate to **C:\trick**.<br>
 `cd C:\trick`
