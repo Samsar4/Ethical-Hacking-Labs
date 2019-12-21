@@ -8,7 +8,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 * Basic understanding of Linux and Windows. 
 * Basic understanding of Networking.
 
-The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. **Google is always your best friend.**
+⚠️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. **Google is always your best friend.**
 
 # Index
 1. Footprinting and Reconnaissance
