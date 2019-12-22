@@ -47,6 +47,8 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Hacking Windows with Msf/Meterpreter - Post Exploitation](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/6-Hacking-Windows-with-Metasploit-PostExploitation.md)
     * [Hiding Data - NTFS streams](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/7-NTFS-Streams.md)
     * [Hiding Data - Steganography](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/8-Steganography.md)
+    * [Using Covert_TCP](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/9-Covert_TCP.md)
+    * [Auditpol basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/10-Auditpol.md)
     * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--WindowsTools.md)
 6. Malware Threats
     * [Soon... ]

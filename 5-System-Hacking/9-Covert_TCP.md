@@ -1,6 +1,5 @@
-# Covert Channels usign Cover_TCP
+# Covert Channels using Cover_TCP
 This program manipulates the TCP/IP header to transfer a file one byte at a time to a destination host.
-
 
 Networks use network access control permissions to permit/deny the traffic through them. Tunneling is used to bypass the access control rules of firewalls, IDS, IPS, web proxies to allow certain traffic. Covert channels can be made by inserting data into unused fields of protocol headers. There are many unused or misued fields in TCP or IP over which data can be sent to bypass firewalls.
 

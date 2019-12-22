@@ -3,7 +3,7 @@ Auditpol is a command in Windows Server 2016, 2012 and 2008, and is required for
 
 Auditpol displays the information on the performance and functions to manipulate audit policies.
 
-Microsoft Documentation: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/auditpol
+**Microsoft Documentation**: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/auditpol
 
 ### Objectives
 * How to set the Audit Policies
