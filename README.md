@@ -38,7 +38,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Overview and Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/4-Vulnerability-Analysis/Overview-and-Tools.md) 
 5. System Hacking
     * [What is?](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--System-Hacking.md)
-    * [Playing with LLMNR / NBT-NS](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/0-LLMNR-NBT-NS.md)
+    * [LLMNR / NBT-NS Spoofing](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/0-LLMNR-NBT-NS.md)
     * [Dumping and Cracking SAM hashes](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/1-SAM-Hashes.md)
     * [Rainbow Tables](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/2-Rainbow-tables.md)
     * [Establishing a VNC Session](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/3-VNC-Session.md)
