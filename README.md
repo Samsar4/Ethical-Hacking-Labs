@@ -51,6 +51,8 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Auditpol basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/10-Auditpol.md)
     * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--WindowsTools.md)
 6. Malware Threats
+    * [Malware Threats](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/--Malware-Threats.md)
+    * [njRAT - Remote Access Trojan](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/0-Using-njRAT.md)
     * [Soon... ]
 7. Sniffing
     * [Soon... ]
