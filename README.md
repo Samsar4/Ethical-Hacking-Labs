@@ -1,14 +1,17 @@
 # Ethical Hacking Labs
 ![h](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/89f706846f97cd3e59880dbc03e4f1d5f8023783/header-ehl.jpg)
 
-This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. **These tutorials accompany the materials of CEH v10**.<br><br> If you plan to take the [CEH](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) (Certified Ethical Hacker) exam, these tutorials will be helpful in your studies. **Remember to practice in your own virtual environment.**
+This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. **These tutorials accompany the materials of CEH v10 content.**<br><br> If you plan to take the [CEH](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/) (Certified Ethical Hacker) exam, these tutorials will be helpful in your studies.
+
+💻 **Remember to practice in your own virtual environment.**
+
+⚠️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. **Google is always your best friend.**
 
 **Prerequisites**:
 * Virtual environment (Virtual Box, VMWare, Hyper-V etc).
 * Basic understanding of Linux and Windows. 
+* Basic understanding of Active Directory Domain Services.
 * Basic understanding of Networking.
-
-⚠️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. **Google is always your best friend.**
 
 # Index
 1. Footprinting and Reconnaissance
