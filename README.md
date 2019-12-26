@@ -30,13 +30,13 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Mega Ping](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/2-MegaPing.md)
     * [Nmap Basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/3-Nmap.md)
     * [Avoid Detection with Nmap](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/4-NmapDecoyIP.md)
-    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/5-WindowsTools.md)
+    * [More Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/5-WindowsTools.md)
 3. Enumeration
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/--What-is-Enumeration.md)
     * [Enumeration with Nmap](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/0-Enumerating-with-Nmap.md)
     * [SNMP Enumeration](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/1-SNMP-Enumeration.md)
     * [Enum4Linux](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/2-Enum4linux-Win-and-Samba-Enumeration.md)
-    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/3-Windows-EnumerationTools.md)
+    * [More Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/3-Enumeration/3-Windows-EnumerationTools.md)
 4. Vulnerability Analysis
     * [Overview and Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/4-Vulnerability-Analysis/Overview-and-Tools.md) 
 5. System Hacking
@@ -52,12 +52,12 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Hiding Data - Steganography](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/8-Steganography.md)
     * [Using Covert_TCP](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/9-Covert_TCP.md)
     * [Auditpol basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/10-Auditpol.md)
-    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--WindowsTools.md)
+    * [More Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/--WindowsTools.md)
 6. Malware Threats
     * [Malware Threats](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/--Malware-Threats.md)
     * [njRAT - Remote Access Trojan](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/0-Using-njRAT.md)
     * [Obfuscating a Trojan using SwayzCryptor](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/1-Obfuscating-Trojan-SwayzCryptor.md)
-    * [Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/--WindowsGUITools.md)
+    * [More Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/--WindowsGUITools.md)
 7. Sniffing
     * [Soon... ]
 8. Social Engineering
