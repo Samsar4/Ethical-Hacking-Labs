@@ -58,6 +58,8 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [njRAT](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/1-Using-njRAT.md)
     * [HTTP RAT Trojan](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/2-HTTP-Trojan.md)
     * [Obfuscating a Trojan using SwayzCryptor](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/3-Obfuscating-Trojan-SwayzCryptor.md)
+    * [Malware Analysis Lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/4-Malware-Analysis-Lab.md)
+    * [Windows Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/5-Windows-Tools.md)
 7. Sniffing
     * [Soon... ]
 8. Social Engineering
