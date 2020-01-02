@@ -53,11 +53,11 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Using Covert_TCP](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/10-Covert_TCP.md)
     * [Auditpol basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/11-Auditpol.md)
     * [More Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/12-WindowsTools.md)
-6. Malware Threats
-    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/0-Introduction.md)
-    * [njRAT](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/1-Using-njRAT.md)
-    * [HTTP RAT Trojan](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/2-HTTP-Trojan.md)
-    * [Obfuscating a Trojan using SwayzCryptor](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware-Threats/3-Obfuscating-Trojan-SwayzCryptor.md)
+6. Malwares 
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/0-Introduction.md)
+    * [njRAT](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/1-Using-njRAT.md)
+    * [HTTP RAT Trojan](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/2-HTTP-Trojan.md)
+    * [Obfuscating a Trojan using SwayzCryptor](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/3-Obfuscating-Trojan-SwayzCryptor.md)
 7. Sniffing
     * [Soon... ]
 8. Social Engineering
