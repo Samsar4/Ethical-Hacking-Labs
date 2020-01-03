@@ -95,7 +95,6 @@ In my lab, the **10.0.2.43** is my Windows virtual machine, this may differ from
 `net.sniff on`
 
 7. Type `help` to list the modules running:<br><br>
-`help`
 ![modules2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/9b7efcd559aef438cbbf1aa8a14ceeced52b19d5/bettercap-3.png)
 
 ### The ARP spoofing
@@ -107,17 +106,17 @@ Bettercap is fooling the **router** and the **target machine(Windows)**, putting
 
 ![arp5](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/af2872eca1b4d3ecf5c2b3979d8ffd33d1652186/arp-5.png)
 
-As you can see, the **router** MAC address is the same as the **Kali**.
+As you can see, the Windows machine 'thinks' the **router** MAC address is the same as the **Kali** since the ARP table is spoofed.
 
 
 ### Generate some generic traffic on the Target machine.
 
 1. Log into your Windows virtual machine.
 2. Launch the browser and type the URL: http://testhtml5.vulnweb.com
-3. Login into this vulnerable-test-website with sample credentials: **user: admin, password: password**.
+3. Login into this vulnerable-testing-website with sample credentials: **user: admin | password: password**.
 
 ### Grabbing and analyzing every request
-4. Back to your Bettercap on Kali machine and analyze all the requests sent from the Windows.
+* Back to your Bettercap on Kali machine and analyze all the requests sent from the Windows.
 
 ![b7](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/e27e815cbb390ab5c7d5928fe897f49a71cf73ce/bettercap-7.png)
 
