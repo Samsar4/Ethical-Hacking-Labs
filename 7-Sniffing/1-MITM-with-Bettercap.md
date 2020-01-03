@@ -15,9 +15,9 @@ An MITM is aform of active eavesdropping in which the attacker makes independent
 MITM attacks come in many variations.
 
 ### Objectives
-* Sniff network traffice and perform ARP poisoning.
+* Sniff network traffic and perform ARP poisoning.
 * Launch Man-in-the-Middle attack.
-* Sniff network for passwords.
+* Sniff network traffic for passwords.
 
 ### Requisites
 * Kali Linux virtual machine.
