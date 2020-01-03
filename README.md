@@ -61,26 +61,15 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Malware Analysis Lab](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/4-Malware-Analysis-Lab.md)
     * [Windows Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/5-Windows-Tools.md)
 7. Sniffing
-    * [Soon... ]
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/7-Sniffing/0-Introduction.md)
 8. Social Engineering
-    * [Soon... ]
 9. Denial-of-Service
-    * [Soon... ]
 10. Session Hijacking
-    * [Soon... ]
 11. Evading IDS, Firewalls, and Honeypots
-    * [Soon... ]
 12. Hacking Web Servers
-    * [Soon... ]
 13. Hacking Web Applications
-    * [Soon... ]
 14. SQL Injection
-    * [Soon... ]
 15. Hacking Wireless Networks
-    * [Soon... ]
 16. Hacking Mobile Platforms
-    * [Soon... ]
 17. Cloud Computing
-    * [Soon... ]
 18. Cryptography
-    * [Soon... ]
