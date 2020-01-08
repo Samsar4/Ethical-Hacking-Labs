@@ -62,6 +62,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 7. Sniffing
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/7-Sniffing/0-Introduction.md)
     * [MITM using BetterCAP](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/7-Sniffing/1-MITM-with-Bettercap.md)
+    * [MAC Address Spoofing](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/7-Sniffing/2-Spoofing-MAC-address.md)
 8. Social Engineering
 9. Denial-of-Service
 10. Session Hijacking
