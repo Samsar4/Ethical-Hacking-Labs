@@ -64,6 +64,9 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [MAC Address Spoofing](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/7-Sniffing/2-Spoofing-MAC-address.md)
     * [Windows Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/7-Sniffing/x-Windows-Tools.md)
 8. **Social Engineering**
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/8-Social-Engineering/0-Introduction.md)
+    * [Using SET](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/8-Social-Engineering/1-Using-SET.md)
+    * [Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/8-Social-Engineering/X-Tools.md)
 9. **Denial-of-Service**
 10. **Session Hijacking**
 11. **Evading IDS, Firewalls, and Honeypots**
