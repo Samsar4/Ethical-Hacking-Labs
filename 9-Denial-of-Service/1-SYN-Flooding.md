@@ -90,7 +90,7 @@ Once the auxiliary module is configured, start the DoS attack on Windows 10 by t
 This begins the SYN flooding on the Windows 10.
 
 ## Examine the DoS Attack
-Switch to the Windows 10 machine and launch the **Wireshark**, select the corret interface and click start.
+Switch to the Windows 10 machine and launch the [**Wireshark**](https://www.wireshark.org/), select the corret interface and click start.
 
 Wireshark displays the traffic comming from the machine as shown below:
 
@@ -107,3 +107,24 @@ You will observe that the CPU and Ethernet usage has increased drastically after
 ![task-manager-2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/9f36f0e0d55c0b7429e547dd93c7c55c55b96ea4/synflood-task-manager-1.png)
 
 To stop the DoS attack, back to Metasploit on Kali and press **Ctrl+C** to terminate attack.
+
+# SYN Flooding using hping3
+hping3 is a command-line oriented TCP/IP packet assembler/analyzer.
+
+To learn more about **hping3** you can check [this module](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/2-Scanning-Networks/1-hping3.md).
+
+## Perform SYN flooding using hping3
+
+`hping3 -S [Windows 10 IP address] -a [Kali IP address] -p 22 --flood`
+
+![syn2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/72394c4deaa152f806930cd26a1e4cf424b3e77a/syn-2.png)
+
+This initiates the SYN flooding on Windows 10.
+
+Hping3 floods the victim machine by sending bulk **SYN bulks** and **overloading** victim resources.
+
+Switch to the Windows 10 and launch the [Wireshark](https://www.wireshark.org/), select the correct interface and start capturing.
+
+Analyze the traffic captured, you will notice the huge number of **SYN packets**, which can cause the target machine to crash.
+
+![wireshark2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/72394c4deaa152f806930cd26a1e4cf424b3e77a/syn-wireshark-2.png)
