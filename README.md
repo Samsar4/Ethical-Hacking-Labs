@@ -71,6 +71,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/9-Denial-of-Service/0-Introduction.md)
     * [SYN Flooding](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/9-Denial-of-Service/1-SYN-Flooding.md)
     * [DDoS using HOIC](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/9-Denial-of-Service/2-DDoS-using-HOIC.md)
+    * [Detecting DoS Traffic](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/9-Denial-of-Service/3-Detecting-DoS-Traffic.md)
 10. **Session Hijacking**
 11. **Evading IDS, Firewalls, and Honeypots**
 12. **Hacking Web Servers**
