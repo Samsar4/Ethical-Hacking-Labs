@@ -68,6 +68,8 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Using SET](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/8-Social-Engineering/1-Using-SET.md)
     * [Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/8-Social-Engineering/X-Tools.md)
 9. **Denial-of-Service**
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/9-Denial-of-Service/0-Introduction.md)
+    * [SYN Flooding](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/9-Denial-of-Service/1-SYN-Flooding.md)
 10. **Session Hijacking**
 11. **Evading IDS, Firewalls, and Honeypots**
 12. **Hacking Web Servers**
