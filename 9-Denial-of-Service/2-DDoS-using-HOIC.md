@@ -11,8 +11,6 @@ A distribute denial of services (DDoS) attack involves a group of compromised sy
 ### Overview of HOIC
 High Orbit Ion Cannon (HOIC) is a free, open-source network stress application developed by Anonymous, a hacktivist collective, to replace the Low Orbit Ion Cannon (LOIC). Used for denial of service (DoS) and distributed denial of service (DDoS) attacks, it functions by flooding target systems with junk HTTP GET and POST requests.
 
-Download: https://anonfile.com/18Kdk9Panb/High_Orbit_Ion_Cannon_HOIC_zip
-
 ## Log in to Virtual Machines
 Before beginning this lab, turn on and log in to all virtual machines on this lab (Windows 7, 10, Server and Kali Linux).
 
