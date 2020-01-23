@@ -3,15 +3,17 @@
 
 This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
 
-⌨️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learning ethical hacking. **Google is always your best friend.**
+⌨️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.**
 
 💻 **Remember to practice in your own virtual environment.**
 
 **Prerequisites**:
-* Virtual environment (Virtual Box, VMWare, Hyper-V etc).
+* Virtual environment setup (Virtual Box, VMWare, Hyper-V etc).
 * Basic understanding of Linux and Windows. 
 * Basic understanding of Networking.
+
 *** 
+
 1. **Footprinting and Reconnaissance**
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/0-What-is-Footprinting.md)
     * [Windows command line](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/1-Windows-CommandLine.md)
@@ -51,7 +53,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Using Covert_TCP](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/10-Covert_TCP.md)
     * [Auditpol basics](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/11-Auditpol.md)
     * [More Windows GUI Tools](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/5-System-Hacking/12-WindowsTools.md)
-6. **Malwares** 
+6. **Malware** 
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/0-Introduction.md)
     * [njRAT](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/1-Using-njRAT.md)
     * [HTTP RAT Trojan](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/6-Malware/2-HTTP-Trojan.md)
