@@ -152,8 +152,8 @@ This is done so that bettercap can know whether it should MITM an SSL connection
 Official hstshijack repo:
 https://github.com/bettercap/caplets/blob/master/hstshijack/README.md
 
-My custom hstshijack:
-https://anonfile.com/xcz11cP4n8/hstshijack_zip
+My custom hstshijack with spoof caplet:
+https://github.com/Samsar4/Caplets
 
 **Note:** This method in default payloads doesn't work on a few popular websites like Twitter or Facebook, since the modern browsers have a security measure hardcoded on for those websites. But it works in a majority websites that is using HTTPS.
 
