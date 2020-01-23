@@ -10,7 +10,7 @@ Bettercap Official Documentation: https://www.bettercap.org/intro/
 Official Repo: https://github.com/bettercap/bettercap
 
 ### Objectives 
-* Intercept Traffic and sniff out user credentials from a network
+* Intercept Traffic and sniff out user credentials (HTTP and HTTPS).
 
 ### Requisites
 * Kali Linux virtual machine (Attacker)
@@ -46,7 +46,7 @@ module | about
 `arp.spoof` | This module keeps spoofing selected hosts on the network using crafted ARP packets in order to perform a MITM attack. [[+]](https://www.bettercap.org/modules/ethernet/spoofers/arp.spoof/)
 `net.sniff` | This module is a network packet sniffer and fuzzer supporting both BPF syntax and regular expressions for filtering. It is also able to dissect several major protocols in order to harvest credentials. [[+]](https://www.bettercap.org/modules/ethernet/net.sniff/)
 
-_You can type `help` following with the `module` name to grab some details about:_<br>
+_You can type `help` following with the `module` name to grab some details about:_<br><br>
 ![b2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c2be3479c96a94b3d2c042e8c8c4df20a4a06b57/bettercap-2.png)
 
 
@@ -118,7 +118,7 @@ As you can see, we captured the credentials sent to the website. Anything that t
 _**Note**: this technique works on HTTP websites not HTTPS. To perform such action you need to bypass the HSTS (HTTP Strict Transport Security). You can perform this technique using Bettercap and [hstshijack](https://github.com/bettercap/caplets/tree/master/hstshijack) caplet._
 
 ## Automate BetterCAP using Caplets
-To be more efficient on your work, you can automate the modules setup part by creating a simple **Caplet file**(file.cap) and adding the commands per line.
+To be more efficient on your work, you can automate the modules setup by creating a simple **Caplet file**(file.cap) and adding the commands per line.
 
 1. Create the caplet:<br><br>
 `touch spoof.cap`
@@ -138,3 +138,51 @@ As you can see is the same commands in order that you used previously.
 
 3. Start the **Bettercap** using the spoof **Caplet** that you created:<br><br>
 `bettercap -iface eth0 -caplet spoof.cap`
+
+
+## Bypassing HTTPS using hstshijack
+This module injects HTML & JS files with a payload that spoofs your targeted hostnames and communicates with bettercap, revealing all URLs that were discovered in the injected document.
+
+When bettercap receives a callback with a new URL, it sends a HEAD request to learn whether the host in this URL sends HTTPS redirects, and keeps a log.
+
+This is done so that bettercap can know whether it should MITM an SSL connection with a host, before the victim navigates to it.
+
+**BetterCAP comes with hstshijack by default.**
+
+Official hstshijack repo:
+https://github.com/bettercap/caplets/blob/master/hstshijack/README.md
+
+My custom hstshijack:
+https://anonfile.com/xcz11cP4n8/hstshijack_zip
+
+**Note:** This method in default payloads doesn't work on a few popular websites like Twitter or Facebook, since the modern browsers have a security measure hardcoded on for those websites. But it works in a majority websites that is using HTTPS.
+
+1. Create a caplet called **spoof.cap**
+
+2. Add those parameters (remember to put the target IP address on arp.spoof.targets):
+```sh
+net.probe on
+set arp.spoof.fullduplex true 
+set arp.spoof.targets <TARGET IP ADDRESS > 
+arp.spoof on
+set net.sniff.local true
+net.sniff on
+```
+
+3. In the same folder that you created the caplet, start the **BetterCAP** using the spoof.cap **Caplet** that you created:<br><br>
+`bettercap -iface eth0 -caplet spoof.cap`
+
+4. On BetterCAP, launch the hstshijack:<br><br>
+`hstshijack/hstshijack`<br><br>
+![hstshijack](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/02af023f2abc73cbda37c644eaf1128f222a612a/hstshijack.png)
+
+5. Switchback to the Windows and open the browser.
+
+6. On this lab we will test the popular **StackOverflow**, type the URL: stackoverflow.com and hit enter.<br><br>
+![hstshijack2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/4126125b5858854a68d97552a12041f2e7ad5122/hstshijack-3.png)
+As you can see the HTTPS is sucessfully bypassed and the entire website is loaded.
+
+7. Try to login in with fake account to test it.
+
+8. After you submited the fake credentials, switch back to BetterCAP on Kali Linux and try to find the **method POST** sniffed from BetterCAP, you will find the credentials typed, as shown below: <br><br>
+![hstshijack3](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/02af023f2abc73cbda37c644eaf1128f222a612a/hstshijack-2.png)
