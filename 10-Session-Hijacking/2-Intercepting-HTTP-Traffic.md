@@ -1,27 +1,20 @@
-# MITM attack using BetterCAP
+# Intercepting HTTP Traffic 
+BetterCAP is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an easy to use, all-in-one solution with all the features they might possibly need for performing reconnaissance and attacking WiFi networks, Bluetooth Low Energy devices, wireless HID devices and Ethernet networks.
 
 <p align="center">
   <img width="30%" src="https://raw.githubusercontent.com/bettercap/media/master/logo.png" />
 </p>
-BetterCAP is a powerful, easily extensible and portable framework written in Go which aims to offer to security researchers, red teamers and reverse engineers an easy to use, all-in-one solution with all the features they might possibly need for performing reconnaissance and attacking WiFi networks, Bluetooth Low Energy devices, wireless HID devices and Ethernet networks.
 
-_Bettercap Official Documentation: https://www.bettercap.org/intro/_
+Bettercap Official Documentation: https://www.bettercap.org/intro/
 
-_Official Repo: https://github.com/bettercap/bettercap_
+Official Repo: https://github.com/bettercap/bettercap
 
-### MITM Attack _(Man-in-the-Middle Attack)_
-An MITM is aform of active eavesdropping in which the attacker makes independent connections with the victims and relays messages between them, making them believe that they are talking directly to each other over a private connection, when in fact the entire conversation is controlled by the attacker.
-
-MITM attacks come in many variations.
-
-### Objectives
-* Sniff network traffic and perform ARP poisoning.
-* Launch Man-in-the-Middle attack.
-* Sniff network traffic for passwords.
+### Objectives 
+* Intercept Traffic and sniff out user credentials from a network
 
 ### Requisites
-* Kali Linux virtual machine.
-* Any Windows virtual machine (7, 8, 10 or Server).
+* Kali Linux virtual machine (Attacker)
+* Any Windows virtual machine (Target)
 
 ***
 

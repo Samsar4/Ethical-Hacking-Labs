@@ -73,7 +73,7 @@ We only need the second line of this output starting with **"64 bytes(...)"** th
 
 `ping -c 5 8.8.8.8 | grep "64" | cut -d " " -f 4 | tr -d ":" ; > iptest.txt`
 
-```
+```sh
 8.8.8.8
 8.8.8.8
 8.8.8.8
@@ -91,7 +91,7 @@ Breaking down the one-liner command (by pipe):
 
 1. Create a file .sh (pingsweep.sh)
 
-```
+```sh
 #!/bin/bash 
  
 if [ "$1" == "" ]
