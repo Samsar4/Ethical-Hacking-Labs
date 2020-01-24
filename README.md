@@ -79,6 +79,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Using ZAP - Zed Attack Proxy](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/1-Using-ZAP.md)
     * [Intercepting HTTP Traffic](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/2-Intercepting-HTTP-Traffic.md)
 11. **Evading IDS, Firewalls, and Honeypots**
+    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Evading-IDS-Firewalls-and-Honeypots/0-Introduction.md)
 12. **Hacking Web Servers**
 13. **Hacking Web Applications**
 14. **SQL Injection**
