@@ -80,10 +80,18 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Intercepting HTTP Traffic](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/2-Intercepting-HTTP-Traffic.md)
 11. **Evading IDS, Firewalls, and Honeypots**
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Evading-IDS-Firewalls-and-Honeypots/0-Introduction.md)
+    * [working]
 12. **Hacking Web Servers**
+    * [working]
 13. **Hacking Web Applications**
+    * [working]
 14. **SQL Injection**
+    * [working]
 15. **Hacking Wireless Networks**
+    * [working]
 16. **Hacking Mobile Platforms**
+    * [working]
 17. **Cloud Computing**
+    * [working]
 18. **Cryptography**
+    * [working]
