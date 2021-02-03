@@ -3,7 +3,7 @@
 
 This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
 
-⌨️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.**
+⌨️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learn ethical hacking or any security related matter. **Google is always your best friend; Be curious, be creative.**
 
 💻 **Remember to practice in your own virtual environment.**
 
@@ -78,20 +78,6 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/0-Introduction.md)
     * [Using ZAP - Zed Attack Proxy](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/1-Using-ZAP.md)
     * [Intercepting HTTP Traffic](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/2-Intercepting-HTTP-Traffic.md)
-11. **Evading IDS, Firewalls, and Honeypots**
-    * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Evading-IDS-Firewalls-and-Honeypots/0-Introduction.md)
-    * [working]
-12. **Hacking Web Servers**
-    * [working]
-13. **Hacking Web Applications**
-    * [working]
-14. **SQL Injection**
-    * [working]
-15. **Hacking Wireless Networks**
-    * [working]
-16. **Hacking Mobile Platforms**
-    * [working]
-17. **Cloud Computing**
-    * [working]
-18. **Cryptography**
-    * [working]
+11. **Bonus**
+    * [TCPDUMP Tutorial](-)
+
