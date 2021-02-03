@@ -187,6 +187,14 @@ aa20 66d2 5364 ca3b cc0e 1069 0800 4500
 3637
 ```
 
+Note:
+
+- 4 bits --> 1 hex number --> ```A```
+- 1 byte --> 2 hex's number  --> ```AA```
+- 2 byte --> 1 block of 4 hex numbers --> ```AA20```
+- 4 byte --> 2 blocks of 4 hex numbers --> ```AA20 66d2```
+- 6 byte --> 3 blocks of 4 hex numbers --> ```AA20 66d2 5364```
+
 ## The ICMP packet can be broken into the following protocol elements:
 1) **Ethernet Header** (first 14 bytes); The network media is Ethernet.
     - ```aa20 66d2 5364 ca3b cc0e 1069 0800```
@@ -224,12 +232,9 @@ aa20 66d2 5364 ca3b cc0e 1069 0800 4500
                 - [```601a d934 0002 8e6a```] : ICMP Payload (8 bytes) 
                 - [```0809 0a0b 0c0d 0e0f 1011 1213 1415 1617 1819 1a1b 1c1d 1e1f 2021 2223 2425 2627 2829 2a2b 2c2d 2e2f 3031 3233 3435 3637```] : ICMP Data (48 bytes)
 
+## Illustrated version:
+![icmp](https://user-images.githubusercontent.com/3259997/106795623-35bf1a00-6652-11eb-9b2e-a2cdc0d104c0.png)
 
-- 4 bits --> 1 hex number --> ```A```
-- 1 byte --> 2 hex's number  --> ```AA```
-- 2 byte --> 1 block of 4 hex numbers --> ```AA20```
-- 4 byte --> 2 blocks of 4 hex numbers --> ```AA20 66d2```
-- 6 byte --> 3 blocks of 4 hex numbers --> ```AA20 66d2 5364```
 
 ### References:
 - https://www.informit.com/articles/article.aspx?p=130895&seqNum=3
