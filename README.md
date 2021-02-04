@@ -82,4 +82,8 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [TCPDUMP Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/TCPDump-Tutorial.md)
     * [Dissecting Packets](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Dissecting-packets.md)
     * [ExifTool Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/ExifTool-Tutorial.md)
+    * [hdparm & dd command](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Using-hdparm-and-dd-command.md)
+    * [Recovering a Deleted Partition](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Recovering-Deleted-Partition.md)
+    * [Recovering Deleted Files](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Recovering-Deleted-Files.md)
+    
 
