@@ -71,8 +71,11 @@ UDP piece | About
 `UDP` | **Protocol UDP**
 `length 103` | **length of the packet**
 
-Basic Usage 
+* * * 
+
+Basic usage:
 -----------
+
 
 ## 1.  **Basic communication** (without many options)
 ```bash
@@ -629,8 +632,56 @@ Examples
         tcpdump 'tcp[13]=18'
     ```
 
+
+# Useful `tcpdump` usage:
+
+
+### **View ASCII (```-A```) or HEX (```-X```) traffic:**
+```bash
+tcpdump -A
+```
+```bash
+tcpdump -X
+```
+
+
+### **View traffic with timestamps and don't convert addresses + verbose:**
+```bash
+tcpdump -tttt -n -vv
+```
+
+
+### **Potential DDoS capture - Top talkers after 1000 packets:**
+```bash
+tcpdump -nn -c 1000 | awk '{print $3}' | cut -d. - | fl-4 | sort -n | uniq -c | sort -nr
+```      
+
+
+### **Capture traffic on any interface from target host and specific port. Then output to a file:**
+```bash
+tcpdump -w output-file.pcap -i any dst <TARGET IP ADDRESS> and port 80
+```
+
+
+### **Save pcap file on rotating size:**
+```bash
+tcpdump -n -s65535 -c 1000 -w '%host_%Y-%m­-%d_%H:%M:%S.pcap'
+```
+
+
+### **Find traffic that cotains the word pass:**
+```bash
+tcpdump -n -A -s0 | grep pass
+```
+
+
+### **Grab clear text protocol passwords:**
+```bash
+tcpdump -n -A -s0 port http or port ftp or port smtp or port imap or port pop3 | egrep -i 'pass=|pwd=|log=|login=|user=|username=|pw=|passw=|passwd=|password=|pass:|user:|username:|password:|login:|pass |user ' --color=auto --line-buffered -B20
+```
+
 ### References:
 
 - [danielmiessler.com](https://danielmiessler.com/study/tcpdump/)
-
 - [man7.org](http://man7.org/linux/man-pages/man1/tcpdump.1.html)
+- BTFM | RTFM
