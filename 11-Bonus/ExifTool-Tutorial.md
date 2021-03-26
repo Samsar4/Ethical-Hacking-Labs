@@ -8,6 +8,15 @@ ExifTool supports many different metadata formats including EXIF, GPS, IPTC, XMP
 1. [Official website download](https://exiftool.org/)
 2. [Install tutorial](https://exiftool.org/install.html)
 
+### Objectives:
+* Use exifTool
+* Extract metadata from any file
+
+### Requisites:
+* Any Linux distro
+    * exifTool installed
+
+
 * * *
 
 ### 1. Download a sample file to test

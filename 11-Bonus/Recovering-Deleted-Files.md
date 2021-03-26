@@ -1,8 +1,26 @@
 Recovering Deleted Files
 =============================
 
-## Change to our working directory 
+### Objectives:
+* Learn the basics of **hexedit**, **scalpel** and **foremost**
+* Recovery and Carve files using forensics tools
+
+
+### Requisites:
+* Any Linux distro
+    * scalpel, foremost and hexedit installed
+
+
+### - What is File Carving?
+*File carving is a process used in computer forensics to extract data from a disk drive or other storage device without the assistance of the file system that originality created the file. It is a method that recovers files at unallocated space without any file information and is used to recover data and execute a digital forensic investigation. It also called “carving,” which is a general term for extracting structured data out of raw data, based on format specific characteristics present in the structured data.*
+
+*File carving works only on raw data on the media and it is not connected with file system structure. File carving doesn’t care about any file systems which is used for storing files[.]In the FAT file system for example, when a file is deleted, the file’s directory entry is changed to unallocated space. The first character of the filename is replaced with a marker, but the file data itself is left unchanged. Until it’s overwritten, the data is still present.*
+
+* * * 
+
+## Create a new folder and navigate into it
 ```bash
+mkdir forensic
 cd /forensic/
 ```
 
@@ -248,3 +266,4 @@ total 440
 - [Man: hexedit](https://manpages.ubuntu.com/manpages/bionic/en/man1/hexedit.1.html)
 - [Man: scalpel](https://manpages.ubuntu.com/manpages/precise/man1/scalpel.1.html)
 - [Man: foremost](https://linux.die.net/man/1/foremost)
+- [Infosec Institute - Blog post](https://resources.infosecinstitute.com/topic/file-carving/)

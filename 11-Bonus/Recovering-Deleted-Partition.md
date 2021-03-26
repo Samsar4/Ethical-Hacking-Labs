@@ -1,5 +1,14 @@
 Recovering a Deleted Partition
 =================================
+### Objectives:
+* Use Dcfldd, Scalpel and fdisk
+* Learn to recovery any lost partition using forensic tools 
+
+### Requisites:
+* Any Linux distro
+    * exifTool installed
+
+* * * 
 
 > Add a 512M Disk to your virtual machine
 

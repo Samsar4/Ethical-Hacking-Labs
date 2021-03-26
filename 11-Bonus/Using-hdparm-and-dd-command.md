@@ -8,9 +8,17 @@ Command Translation) and therefore may also work with hdparm.
 E.g. recent WD "Passport" models and recent NexStar-3 enclosures.
 Some options may work correctly only with the latest kernels.
 
+
+### Objectives:
+* Learn the basics of **hdparm**, **dd** and **hexedit**
+
+### Requisites:
+* Any Linux distro
+
 * * * 
 
-### Install
+### Install `hdparm`
+* Fedora:
 
 <div>
 
@@ -18,13 +26,27 @@ Some options may work correctly only with the latest kernels.
 
 </div>
 
-### HDparm
+* Ubuntu:
+
+<div>
+
+    sudo apt-get install -y hdparm
+
+</div>
+
+### Running hdparm
 
 <div>
 
     hdparm -giI /dev/sda
 
 </div>
+
+* `-g` : Display the drive geometry (cylinders, heads, sectors), the size (in sectors) of the device, and the starting offset (in sectors) of the device from the beginning of the drive.
+
+* `-i and -I` : Display the identification info which the kernel drivers (IDE, libata) have stored from boot/configuration time.
+
+* More information: [hdparm linux manual](https://man7.org/linux/man-pages/man8/hdparm.8.html)
 
 #### Output
 
@@ -135,7 +157,13 @@ Some options may work correctly only with the latest kernels.
 
 </div>
 
-# Using dd command
+# Using `dd` command
+
+- Using `dd`, it’s possible to directly read and/or write from/to different files provided that the function is already implemented in the respected drivers.
+- It’s super useful for purposes like backing up the boot sector, obtaining random data etc.
+- Data conversion, for example, converting ASCII to EBCDIC encoding.
+- [More info](https://linuxhint.com/linux_dd_command/)
+
 
 ### Create a new directory
 
@@ -155,7 +183,10 @@ Some options may work correctly only with the latest kernels.
 
 </div>
 
-### Install Hexedit
+### Install `hexedit`
+- hexedit shows a file both in ASCII and in hexadecimal. The file can be a device as the file is read a piece at a time. You can modify the file and search through it. 
+- Hex editors are used to inspect the compiled executables or binary files. You can easily use a hex editor to change how a software works with enough experience.
+
 
 <div>
 
@@ -260,7 +291,7 @@ Some options may work correctly only with the latest kernels.
 
 ### Remote Copy
 
-### Start a listener on the examiner machine
+### Start a listener using `netcat` on the examiner machine
 
 <div>
 
@@ -268,7 +299,7 @@ Some options may work correctly only with the latest kernels.
 
 </div>
 
-### Pipe the output off to nc
+### Pipe the output off to `netcat`
 
 <div>
 
@@ -295,3 +326,5 @@ Some options may work correctly only with the latest kernels.
 ### References
 - https://www.man7.org/linux/man-pages/man8/hdparm.8.html
 - https://www.man7.org/linux/man-pages/man1/dd.1.html#DESCRIPTION
+- https://linuxhint.com/linux_dd_command/
+- https://linuxhint.com/hex_editor_linux/
