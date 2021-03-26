@@ -78,7 +78,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/0-Introduction.md)
     * [Using ZAP - Zed Attack Proxy](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/1-Using-ZAP.md)
     * [Intercepting HTTP Traffic](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/2-Intercepting-HTTP-Traffic.md)
-11. **Bonus**
+11. **Bonus(Forensics)**
     * [TCPDUMP Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/TCPDump-Tutorial.md)
     * [Dissecting Packets](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Dissecting-packets.md)
     * [ExifTool Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/ExifTool-Tutorial.md)
