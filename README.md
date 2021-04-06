@@ -3,14 +3,14 @@
 
 This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
 
-⌨️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learn ethical hacking or any security related matter. **Google is always your best friend; Be curious, be creative.**
+⌨️ The tutorials is very practical/hands-on and do not teach how network and system works or how to setup a virtual environment. But you don't need to be an expert to start learn ethical hacking or any security related matter. **Google is always your best friend.**
 
 💻 **Remember to practice in your own virtual environment.**
 
 **Prerequisites**:
 * Virtual environment setup (Virtual Box, VMWare, Hyper-V etc).
-* Basic understanding of Linux and Windows. 
-* Basic understanding of Networking.
+* Basic understanding of Linux, Windows and Network concepts. 
+* Be curious
 
 *** 
 

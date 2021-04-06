@@ -6,7 +6,6 @@ Recovering a Deleted Partition
 
 ### Requisites:
 * Any Linux distro
-    * exifTool installed
 
 * * * 
 
