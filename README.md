@@ -3,7 +3,7 @@
 
 This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
 
-⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide very carefully from basics to more advanced techniques.
+⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide you very carefully from basics to more advanced techniques. **The message here is clear: Practice.**
 
 **Prerequisites**:
 * Any computer with at least 8GB RAM (16GB recommended)
@@ -11,7 +11,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 * Be curious.
 
 **💭 To Do**:
-- Foundational level modules (networking, linux etc)
+- Add Foundational level modules (networking, linux etc)
 - Ethical Hacking modules to add:
     - More Reconnaissance techniques
     - Active Directory: lab build and attack vectors 
@@ -21,7 +21,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 * * * 
 
 ## ⚙️ Core Knowledge:
-First things first, you really need to understand how things work before start to disassembly, look for vulnerable components and exploit things, right? Imagine attacking a giant castle with your bare hands? The castle is made by hundreds of stone walls, towers, doors, guards and traps. Strategy means overall knowledge. 
+First things first, you really need to understand how things work before start to disassembly, look for vulnerable components and exploit things, right? 
 
 **The required core knowledge is about networking, systems, coding and technology in general.**
 
