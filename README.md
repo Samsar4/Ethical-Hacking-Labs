@@ -5,13 +5,13 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 
 ⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide you very carefully from basics to more advanced techniques. **The message here is clear: Practice.**
 
-**Prerequisites**:
+**✅ Prerequisites**:
 * Any computer with at least 8GB RAM (16GB recommended)
 * Virtual environment setup (Virtual Box, VMWare, Hyper-V etc).
 * Be curious.
 
 **💭 To Do**:
-- Add Foundational level modules (networking, linux etc)
+- Add Foundational level modules (networking, lab build, linux kernel etc)
 - Ethical Hacking modules to add:
     - More Reconnaissance techniques
     - Active Directory: lab build and attack vectors 
@@ -27,10 +27,8 @@ First things first, you really need to understand how things work before start t
 
 * [Networking 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/0-Networking-101.md)
 * [Create your Virtual Lab]
-* [Linux]
+* [Linux for Hackers]
 * [Scripting]
-
-* * * 
 
 ## ⚔️ Ethical Hacking:
 1. **Footprinting and Reconnaissance**
@@ -97,8 +95,8 @@ First things first, you really need to understand how things work before start t
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/0-Introduction.md)
     * [Using ZAP - Zed Attack Proxy](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/1-Using-ZAP.md)
     * [Intercepting HTTP Traffic](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/10-Session-Hijacking/2-Intercepting-HTTP-Traffic.md)
-11. **Bonus - 🔬 Digital Forensic Tools**
-    * [TCPDUMP Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/TCPDump-Tutorial.md)
+11. **Bonus - 🔬 The Forensic Approach**
+    * [TCPDump Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/TCPDump-Tutorial.md)
     * [Dissecting Packets](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Dissecting-packets.md)
     * [ExifTool Tutorial](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/ExifTool-Tutorial.md)
     * [hdparm & dd command](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Using-hdparm-and-dd-command.md)
