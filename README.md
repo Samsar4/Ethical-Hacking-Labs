@@ -1,9 +1,16 @@
-# <p align="center">Ethical Hacking Labs</p>
+# <p align="center">Ethical Hacking Labs
+</p>
+
 ![h](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/89f706846f97cd3e59880dbc03e4f1d5f8023783/header-ehl.jpg)
 
 This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
 
 ⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide you very carefully from basics to more advanced techniques. **The message here is clear: Practice.**
+
+<p align="center">
+     <img src="https://img.shields.io/badge/Progress-85%25-yellowgreen" /></a>
+</p>
+
 
 **✅ Prerequisites**:
 * Any computer with at least 8GB RAM (16GB recommended)
