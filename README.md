@@ -13,7 +13,7 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 * Be curious.
 
 **💭 To Do**:
-- ![](https://img.shields.io/badge/Progress-85%25-yellowgreen)
+- ![](https://img.shields.io/badge/Progress-15%25-orange)
 - Add Foundational level modules (networking, lab build, linux kernel etc)
 - Bonus modules to add:
     - More Reconnaissance techniques

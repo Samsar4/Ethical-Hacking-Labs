@@ -107,8 +107,7 @@ For example, the left octet 192 from binary to decimal:
 ```
 * Take the IP: `192.168.64.3`
 * The first octet `192` in 8bit binary is `11000000`.
-* Only the `8th` and `7th` bit is "on", meaning the decimal value is the final sum of these values:  `128 + 64 = 192`
-
+* Only the `8th` and `7th` bit is "on", meaning the decimal value is the final sum of these values:  `128 + 64 = 192`
 
 ⚠️ **Why? Computers see everything in terms of binary; true and false, on and off, 0 and 1.**
 
