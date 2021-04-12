@@ -204,9 +204,8 @@ ________ ________
 
 2. Check the **first three bytes** of your address. The first three bytes from image above is `00:0c:29` 
 
-3. Validate the information by doing a MAC Address / OUI Lookup on the internet. For this example I'm using https://aruljohn.com/
-![mac2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/214242916f8947f09fc15d5bdde6a668fd4a4c1f/mac2lookup.png
-)
+3. Validate the information by doing a MAC Address / OUI Lookup on the internet. For this example I'm using: https://aruljohn.com/
+![mac2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c82686452d3e671f9a4d351cd5c02171914dd16d/mac2lookup.png)
 
 4. As you can see the OUI lookup identify a virtual network interface provided by VMware 
 
