@@ -5,28 +5,26 @@
 
 This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
 
-⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide you very carefully from basics to more advanced techniques. **The message here is clear: Practice.**
+⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide you very carefully from basics to more advanced techniques.
 
 **✅ Prerequisites**:
 * Any computer with at least 8GB RAM (16GB recommended)
-* Virtual environment setup (Virtual Box, VMWare, Hyper-V etc).
-* Be curious.
 
 **💭 To Do**:
-- ![](https://img.shields.io/badge/Progress-15%25-orange)
-- Add Foundational level modules (networking, lab build, linux kernel etc)
+- ![](https://img.shields.io/badge/To_Do_Progress-15%25-orange)
+- Add Foundational level modules (networking, lab build, linux kernel and scripting).
 - Bonus modules to add:
-    - More Reconnaissance techniques
-    - Active Directory: lab build and attack vectors 
-    - Web application: enumeration and exploitation using some OWASP Top 10 vulnerabilities and bug bounty techniques.
-    - Wireless hacking (WPA)
+    - More Reconnaissance techniques.
+    - Active Directory: Lab build and attack vectors.
+    - Web application: Enumeration and exploitation using some OWASP Top 10 vulnerabilities and Bug Bounty techniques.
+    - Wireless hacking (WPA).
 
 * * * 
 
 ## ⚙️ Core Knowledge:
-First things first, you really need to understand how things work before start to disassembly, look for vulnerable components and exploit things, right? 
+First things first, you really need to understand how things work before start to disassembly and look for vulnerable components. The more you understand how systems and networks works, a better hacker you'll be. The 'Core Knowledge' (module 0) is just a jumpstart to these topics.
 
-**The required core knowledge is about networking, systems, coding and technology in general.**
+**Core Knowledge provides a jumpstart to networking, systems and scripting. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
 
 * [Networking 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/0-Networking-101.md)
 * [Create your Virtual Lab]
