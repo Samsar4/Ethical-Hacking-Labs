@@ -17,6 +17,7 @@
 A network consists of two or more computers that are linked in order to share resources. Computer networks are the basis of communication in IT. They are used in a huge variety of ways and can include many different types of network. A computer network is a set of computers that are connected together so that they can share information. The earliest examples of computer networks are from the 1960s, but they have come a long way in the half-century since then.
 
 ![net](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5edc8fbef915a17c93fa91c95877134c8fac324c/net2.jpg)
+<small>LAN Network Topology - SOHO / Small Home Network</small>
 
 **Two very common types of networks include: LAN (Local Area Network) and WAN (Wide Area Network)**
 
@@ -95,7 +96,7 @@ An IP address is a unique address that identifies a device on the internet or a 
 ## Check your local IP address
 
 1. If you are using Linux or MacOS you can open your terminal and type `ifconfig` command
-2. For Windows machine you can open up the cmd prompt or powershell, then type `ipconfig /all`.
+2. For Windows machine you can open up the cmd prompt or powershell, then type `ipconfig /all`
 
 ![inet](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5a56240010acbc33026413ad6b5c6f66e9450413/inet.png)
 
@@ -177,7 +178,9 @@ NAT stands for network address translation. It’s a way to map multiple local p
    Instead of choosing the same IP address every time, this NAT goes through a pool of public IP addresses. This results in the router or NAT device getting a different address each time the router translates the local address to a public address.
 
 ### ⚠️ IP Addresses operates on **Level 3 of OSI Model**
+
 *Note: This module will cover OSI model later.*
+
 ![osi3](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/b9d7f33be654d299f6618feeacb97fc5fd5bd7d2/OSI_L3.png)
 
 # 3. MAC Addresses 
