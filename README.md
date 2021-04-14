@@ -14,11 +14,12 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 - ![](https://img.shields.io/badge/To_Do_Progress-15%25-orange)
 - Add Foundational level modules (networking, lab build, linux kernel and scripting).
 - Bonus modules to add:
+    - ~~Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))~~
     - More Reconnaissance techniques.
     - Active Directory: Lab build and attack vectors.
     - Web application: Enumeration and exploitation using some OWASP Top 10 vulnerabilities and Bug Bounty techniques.
     - Wireless hacking (WPA)
-    - Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))
+
 
 * * * 
 
