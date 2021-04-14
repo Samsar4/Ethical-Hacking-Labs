@@ -17,19 +17,21 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
     - More Reconnaissance techniques.
     - Active Directory: Lab build and attack vectors.
     - Web application: Enumeration and exploitation using some OWASP Top 10 vulnerabilities and Bug Bounty techniques.
-    - Wireless hacking (WPA).
+    - Wireless hacking (WPA)
+    - Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))
 
 * * * 
 
 ## ⚙️ Core Knowledge:
 First things first, you really need to understand how things work before start to disassembly and look for vulnerable components. The more you understand how systems and networks works, a better hacker you'll be. The 'Core Knowledge' (module 0) is just a jumpstart to these topics.
 
-**Core Knowledge provides a jumpstart to networking, systems and scripting. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
+**Core Knowledge provides a jumpstart to networking, systems, scripting and also information security topics. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
 
 * [Networking 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/0-Networking-101.md)
 * [Create your Virtual Lab]
 * [Linux for Hackers]
 * [Scripting]
+* [Information Security 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/4-Infosec-101.md)
 
 ## ⚔️ Ethical Hacking:
 1. **Footprinting and Reconnaissance**

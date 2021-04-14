@@ -4,12 +4,11 @@
 ### **This module have a little bit more theory than practice. The content follows the order:**
 
 1. Introduction
-2. IP Addresses
-3. MAC Addresses
-4. TCP, UDP and 3-Way-Handshake
-5. Protocols, Services and Ports
-6. OSI Model
-7. Subnetting
+2. IP and MAC Addresses
+3. TCP, UDP and 3-Way-Handshake
+4. Ports & Protocols
+5. OSI Model
+6. Subnetting
 
 # 1. Introduction
 
@@ -17,7 +16,8 @@
 A network consists of two or more computers that are linked in order to share resources. Computer networks are the basis of communication in IT. They are used in a huge variety of ways and can include many different types of network. A computer network is a set of computers that are connected together so that they can share information. The earliest examples of computer networks are from the 1960s, but they have come a long way in the half-century since then.
 
 ![net](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5edc8fbef915a17c93fa91c95877134c8fac324c/net2.jpg)
-<small>LAN Network Topology - SOHO / Small Home Network</small>
+
+<sub><sup>LAN Network Topology - SOHO / Small Home Network</sup></sub>
 
 **Two very common types of networks include: LAN (Local Area Network) and WAN (Wide Area Network)**
 
@@ -87,7 +87,7 @@ If you're using the TCP/IP stack and making your own LAN or WAN = Intranet.
 
 * **Internet service providers (ISP)**: companies that provide everyone with their internet connection, both to individuals and to businesses and other organizations.
 
-# 2. IP Addresses
+# 2. IP Addresses & MAC Addresses
 ## What is an IP Address (Internet Protocol)?
 ![ip](https://media.fs.com/images/community/upload/wangEditor/201912/24/_1577182449_2uLs0pQcuT.jpg)
 
@@ -177,13 +177,13 @@ NAT stands for network address translation. It’s a way to map multiple local p
 
    Instead of choosing the same IP address every time, this NAT goes through a pool of public IP addresses. This results in the router or NAT device getting a different address each time the router translates the local address to a public address.
 
-### ⚠️ IP Addresses operates on **Level 3 of OSI Model**
+### ⚠️ IP Addresses operates on **Layer 3 of OSI Model**
 
 *Note: This module will cover OSI model later.*
 
 ![osi3](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/b9d7f33be654d299f6618feeacb97fc5fd5bd7d2/OSI_L3.png)
 
-# 3. MAC Addresses 
+# MAC Addresses 
 
 -  MAC (Media Access Control) address is provided by NIC Card'd manufacturer and gives the physical address of a computer.
 
@@ -204,21 +204,151 @@ ________ ________
 
 2. Check the **first three bytes** of your address. The first three bytes from image above is `00:0c:29` 
 
-3. Validate the information by doing a MAC Address / OUI Lookup on the internet. For this example I'm using: https://aruljohn.com/
+3. Validate the information by performing a **MAC Address Lookup** on the internet. For this example I'm using: https://aruljohn.com/
 ![mac2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c82686452d3e671f9a4d351cd5c02171914dd16d/mac2lookup.png)
 
 4. As you can see the OUI lookup identify a virtual network interface provided by VMware 
 
 *So, to summarize, the **first three bytes** are assigned to a manufacturer of networking equipment and the manufacturer assigns the last three bytes of an address.*
 
-### ⚠️ MAC Addresses operates on Level 2 of OSI Model
+### ⚠️ MAC Addresses operates on Layer 2 of OSI Model
 ![osil2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/b9d7f33be654d299f6618feeacb97fc5fd5bd7d2/OSI_L2.png)
 
-## TCP, UDP and 3-Way-Handshake
+# 3. TCP/IP, UDP and 3-Way-Handshake
+
+## Transmission Control Protocol/Internet Protocol (TCP/IP)
+
+* What is TCP used for?
+
+TCP enables data to be transferred between applications and devices on a network. It is designed to break down a message, such as an email, into packets of data to ensure the message reaches its destination successfully and as quickly as possible.
+
+* What does TCP mean?
+
+TCP means Transmission Control Protocol, which is a communications standard for delivering data and messages through networks. TCP is a basic standard that defines the rules of the internet and is a common protocol used to deliver data in digital network communications.
+
+- The TCP/IP model consists of several types of protocols, including:
+   - TCP and IP
+   - Address Resolution Protocol (ARP)
+   - Internet Control Message Protocol (ICMP)
+   - Reverse Address Resolution Protocol (RARP)
+   - User Datagram Protocol (UDP)
+
+![tcpmod](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/bccff9a7c15aa11636c03686ef344ae2d433f699/tcpmodel.png)
+
+<sub><sup>TCP/IP Model</sup></sub>
+
+TCP is the most commonly used of these protocols and accounts for the most traffic used on a TCP/IP network. **UDP is an alternative to TCP that does not provide error correction, is less reliable, and has less overhead, which makes it ideal for streaming.**
+
+
+## The User Datagram Protocol (UDP)
+Is a lightweight data transport protocol that works on top of IP.
+UDP provides a mechanism to detect corrupt data in packets, but it does not attempt to solve other problems that arise with packets, such as lost or out of order packets. That's why UDP is sometimes known as the Unreliable Data Protocol.
+UDP is simple but fast, at least in comparison to other protocols that work over IP. It's often used for time-sensitive applications (such as real-time video streaming) where speed is more important than accuracy.
+
+- On Linux and Unix systems you can issue the `lsof` command to see which processes is using UDP ports
+![udp](https://cdn.kastatic.org/ka-perseus-images/edbdf593300fc4a51c60a97998c4d01a51ccd3b1.png)
+
+## The TCP format
+![tc](https://cdn.kastatic.org/ka-perseus-images/e5fdf560fdb40a1c0b3c3ce96f570e5f00fff161.svg)
+
+## The UDP format
+![udp](https://cdn.kastatic.org/ka-perseus-images/9d185d3d44c7ef1e2cd61655e47befb4d383e907.svg)
+
+
+## TCP Handshake
+
+TCP uses a three-way handshake to establish a reliable connection. The connection is full duplex, and both sides synchronize (SYN) and acknowledge (ACK) each other. The exchange of these four flags is performed in three steps:
+1. SYN
+2. SYN-ACK
+3. ACK 
+
+![3wayhandshake](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/bd38a6a2d83ea02a4715d6cb7fd8e0d74af3bd26/3wayhs.jpg)
+
+The three message mechanism is designed so that two computers that want to pass information back and forth to each other can negotiate the parameters of the connection before transmitting data such as HTTP browser requests.
+
+## More TCP Flags
+
+| Flag | Name           | Function                                                     |
+| ---- | -------------- | ------------------------------------------------------------ |
+| SYN  | Synchronize    | Set during initial communication.  Negotiating of parameters and sequence numbers |
+| ACK  | Acknowledgment | Set as an acknowledgement to the SYN flag.  Always set after initial SYN |
+| RST  | Reset          | Forces the termination of a connection (in both directions)  |
+| FIN  | Finish         | Ordered close to communications                              |
+| PSH  | Push           | Forces the delivery of data without concern for buffering    |
+| URG  | Urgent         | Data inside is being sent out of band.  Example is cancelling a message |
+
+## Capturing packets (Example)
+
+- The figure below shows the 3-way-handshake packets captured with [Wireshark](https://www.wireshark.org/)
+
+![wireshark](https://lh3.googleusercontent.com/proxy/x2tHsWwrOlmiI6fvxIT2g2egnyZcyNVH7BGQFlf5b5980X-FaLQXBF4HuZK5enqbZvUj5gB7vgUQy-0yzuD4a_HC5UsqqNdSDLOACZmOv1Mx1UOkWllU5hf8zkYxU_CGYBEVl81lkYgfHAAjj0KD0n0kq9NbHazK5Q-wutD6uWSayIo)
+
+# 4. Ports & Protocols
+## What is a Port?
+In computer networking, a port is a communication endpoint. At the software level, within an operating system, a port is a logical construct that identifies a specific process or a type of network service.
+
+## The most common ports
+As a penetration tester / ethical hacker you should be familiar with the common ports and protocols used by popular services.
+
+### <u>Port Numbers</u>
+
+- **Internet Assigned Numbers Authority** (IANA) - maintains Service Name and Transport Protocol Port Number Registry which lists all port number reservations
+
+- Ranges
+
+  - **Well-known ports** - 0 - 1023
+
+  - **Registered ports** - 1024 - 49,151
+
+  - **Dynamic ports** - 49,152 - 65,535
+
+    | Port Number | Protocol | Transport Protocol |
+    | ----------- | -------- | ------------------ |
+    | 20/21       | FTP      | TCP                |
+    | 22          | SSH      | TCP                |
+    | 23          | Telnet   | TCP                |
+    | 25          | SMTP     | TCP                |
+    | 53          | DNS      | TCP/UDP            |
+    | 67          | DHCP     | UDP                |
+    | 69          | TFTP     | UDP                |
+    | 80          | HTTP     | TCP                |
+    | 110         | POP3     | TCP                |
+    | 135         | RPC      | TCP                |
+    | 137-139     | NetBIOS  | TCP/UDP            |
+    | 143         | IMAP     | TCP                |
+    | 161/162     | SNMP     | UDP                |
+    | 389         | LDAP     | TCP/UDP            |
+    | 443         | HTTPS    | TCP                |
+    | 445         | SMB      | TCP                |
+    | 514         | SYSLOG   | UDP                |
+
+  - A service is said to be **listening** for a port when it has that specific port open
+
+  - Once a service has made a connection, the port is in an **established** state
+
+  - **`netstat`** command:
+
+    - Shows open ports on computer
+    - **netstat -an** displays connections in numerical form
+    - **netstat -b** displays executables tied to the open port (admin only)
+
+
 -
-## Protocols, Services and Ports
+# 5. OSI Model
 -
-## OSI Model
--
-## Subnetting
--
+# 6. Subnetting
+- **IPv4 Main Address Types**
+  - **Unicast** - acted on by a single recipient
+  - **Multicast** - acted on by members of a specific group
+  - **Broadcast** - acted on by everyone on the network
+    - **Limited** - delivered to every system in the domain (255.255.255.255)
+    - **Directed** - delivered to all devices on a subnet and use that broadcast address
+- **Subnet mask** - determines how many address available on a specific subnet
+  - Represented by three methods
+    - **Decimal** - 255.240.0.0
+    - **Binary** - 11111111.11110000.00000000.00000000
+    - **CIDR** - x.x.x.x/12   (where x.x.x.x is an ip address on that range)
+  - If all the bits in the host field are 1s, the address is the broadcast
+  - If they are all 0s, it's the network address
+  - Any other combination indicates an address in the range
+  - ![img](https://s3.amazonaws.com/prealliance-thumbnails.oneclass.com/thumbnails/001/751/775/original/stringio.txt?1513221790)
