@@ -100,15 +100,12 @@ An IP address is a unique address that identifies a device on the internet or a 
 
 ![inet](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5a56240010acbc33026413ad6b5c6f66e9450413/inet.png)
 
-
 - inet IPv4: `192.168.64.3`
    - `inet` --> The inet (Internet protocol family) show the local IP address. This is IP version 4 (IPv4) Using 32-bit decimal number.
 - inet6 IPv6: `fe80::c83b:ccff:fe0e:1069`
 
    - `inet6` --> Is a new version of IP (IPv6), using 128 bits hexadecimal value.
 - `ether` --> MAC address - unique identifier assigned to a network interface controller (NIC)
-
-
 
 ## More about the IPv4 decimal value:
 
@@ -151,14 +148,12 @@ For example, the left octet 192 from binary to decimal:
 ## IPv4 and IPv6
 ![ipv](https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/IPv4%20vs.%20IPv6%20What%E2%80%99s%20the%20Difference/IPv4-vs-IPv6.png?width=2750&name=IPv4-vs-IPv6.png)
 
-
-
 ## Private and Public IP Addresses
 All IPv4 addresses can be divided into two major groups: **global (or public, external)** - this group can also be called 'WAN addresses' — those that are used on the Internet, and **private (or local, internal) addresses** — those that are used in the local network (LAN).
 
 ![priv-pub](https://wiki.teltonika-networks.com/wikibase/images/thumb/a/a7/Sip.png/1100px-Sip.png)
 
-## More about private IP addresses:
+## More about **Private IP** addresses:
 Private (internal) addresses are not routed on the Internet and no traffic can be sent to them from the Internet, they only supposed to work within the local network.
 Private addresses include IP addresses from the following subnets:
 
@@ -199,10 +194,11 @@ ________ ________
 00:0c:29:99:98:ca
 ```
 
+## Checking vendor behind MAC addresse
 1. Check your MAC address use the command `ifconfig` (Linux) or `/ipconfig` (Windows)
 ![mac](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/214242916f8947f09fc15d5bdde6a668fd4a4c1f/mac2.png)
 
-2. Check the **first three bytes** of your address. The first three bytes from image above is `00:0c:29` 
+2. Copy and save the **first three bytes** of your address. *(The first three bytes from image above is `00:0c:29`)*
 
 3. Validate the information by performing a **MAC Address Lookup** on the internet. For this example I'm using: https://aruljohn.com/
 ![mac2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c82686452d3e671f9a4d351cd5c02171914dd16d/mac2lookup.png)
@@ -277,18 +273,18 @@ The three message mechanism is designed so that two computers that want to pass 
 | PSH  | Push           | Forces the delivery of data without concern for buffering    |
 | URG  | Urgent         | Data inside is being sent out of band.  Example is cancelling a message |
 
-## Capturing packets (Example)
+## Capturing 3 Way handshakes (Example)
 
-- The figure below shows the 3-way-handshake packets captured with [Wireshark](https://www.wireshark.org/)
+- The figure below shows the 3-way-handshake packets captured by [Wireshark](https://www.wireshark.org/)
 
-![wireshark](https://lh3.googleusercontent.com/proxy/x2tHsWwrOlmiI6fvxIT2g2egnyZcyNVH7BGQFlf5b5980X-FaLQXBF4HuZK5enqbZvUj5gB7vgUQy-0yzuD4a_HC5UsqqNdSDLOACZmOv1Mx1UOkWllU5hf8zkYxU_CGYBEVl81lkYgfHAAjj0KD0n0kq9NbHazK5Q-wutD6uWSayIo)
+![wireshark](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5213becc28e3f9f46c976d05cd090ffd070ff5d1/wireshark0.png)
 
 # 4. Ports & Protocols
 ## What is a Port?
 In computer networking, a port is a communication endpoint. At the software level, within an operating system, a port is a logical construct that identifies a specific process or a type of network service.
 
 ## The most common ports
-As a penetration tester / ethical hacker you should be familiar with the common ports and protocols used by popular services.
+As a penetration tester or ethical hacker you should be familiar with the common ports and protocols used by popular services.
 
 ### <u>Port Numbers</u>
 
@@ -332,10 +328,13 @@ As a penetration tester / ethical hacker you should be familiar with the common 
     - **netstat -an** displays connections in numerical form
     - **netstat -b** displays executables tied to the open port (admin only)
 
-
--
 # 5. OSI Model
--
+OSI Model is a hypothetical networking framework that uses specific protocols and mechanisms in every layer of it. This model is used to divide the network architecture into seven different layers conceptually. These layers are:
+
+![osi-model](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/3e2dc59e7c341f4d79b2b93bac03fd8378c7ae3a/tcpmo.jpg)
+
+There also involves some security postures and mechanisms that a security professional must know to detect and put the security method effectively in every layer.
+
 # 6. Subnetting
 - **IPv4 Main Address Types**
   - **Unicast** - acted on by a single recipient

@@ -11,30 +11,29 @@ This is a collection of tutorials and labs made for  ethical hacking students, c
 * Any computer with at least 8GB RAM (16GB recommended)
 
 **💭 To Do**:
-- ![](https://img.shields.io/badge/To_Do_Progress-15%25-orange)
+- ![](https://img.shields.io/badge/status-in%20progress-orange)
 - Add Foundational level modules (networking, lab build, linux kernel and scripting).
 - Bonus modules to add:
-    - ~~Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))~~
+    - Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))
     - More Reconnaissance techniques.
     - Active Directory: Lab build and attack vectors.
     - Web application: Enumeration and exploitation using some OWASP Top 10 vulnerabilities and Bug Bounty techniques.
     - Wireless hacking (WPA)
 
-
 * * * 
 
-## ⚙️ Core Knowledge:
+## ⚙️ Core Knowledge
 First things first, you really need to understand how things work before start to disassembly and look for vulnerable components. The more you understand how systems and networks works, a better hacker you'll be. The 'Core Knowledge' (module 0) is just a jumpstart to these topics.
 
 **Core Knowledge provides a jumpstart to networking, systems, scripting and also information security topics. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
 
 * [Networking 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/0-Networking-101.md)
-* [Create your Virtual Lab]
-* [Linux for Hackers]
+* [Creating virtual labs]
+* [Linux for hackers]
 * [Scripting]
 * [Information Security 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/4-Infosec-101.md)
 
-## ⚔️ Ethical Hacking:
+## ⚔️ Ethical Hacking
 1. **Footprinting and Reconnaissance**
     * [Introduction](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/0-What-is-Footprinting.md)
     * [Windows command line](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/1-Footprinting-and-Reconnaissance/1-Windows-CommandLine.md)
