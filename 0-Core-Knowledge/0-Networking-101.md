@@ -5,10 +5,11 @@
 
 1. Introduction
 2. IP and MAC Addresses
-3. TCP, UDP and 3-Way-Handshake
-4. Ports & Protocols
-5. OSI Model
-6. Subnetting
+3. Subnetting
+4. TCP, UDP and 3-Way-Handshake
+5. Ports & Protocols
+6. OSI Model
+
 
 # 1. Introduction
 
@@ -87,7 +88,7 @@ If you're using the TCP/IP stack and making your own LAN or WAN = Intranet.
 
 * **Internet service providers (ISP)**: companies that provide everyone with their internet connection, both to individuals and to businesses and other organizations.
 
-# 2. IP Addresses & MAC Addresses
+# 2. IP & MAC Address
 ## What is an IP Address (Internet Protocol)?
 ![ip](https://media.fs.com/images/community/upload/wangEditor/201912/24/_1577182449_2uLs0pQcuT.jpg)
 
@@ -125,24 +126,30 @@ IPv4 = 32 bits range (4 octets of 8 bits, from 0-255 each(4))
 8th bit | 7th bit | 6th bit | 5th bit | 4th bit | 3rd bit | 2nd bit | 1st bit
 128 (2^7) | 64 (2^6) | 32 (2^5) | 16 (2^4) | 8 (2^3) | 4 (2^2) | 2 (2^1) | 1 (2^0)
 
+Here is how binary octets convert to decimal: The right most bit, or least significant bit, of an octet holds a value of 2^0. The bit just to the left of that holds a value of 2^1. This continues until the left-most bit, or most significant bit, which holds a value of 2^7. So if all binary bits are a one, the decimal equivalent would be 255 as shown here:
 
 ```
-For example, the left octet 192 from binary to decimal:
+  1   1   1   1   1   1   1   1
+  |   |   |   |   |   |   |   |
+(128 +64 +32 +16 +8  +4  +2  +1) --> 255 
 
- 0   0   0   0   0   0   0   0 
+Example of octet conversion:
+IP Address: 192.168.64.3
+
+To calculate the first octet (192.), from binary format to decimal:
+
+128  64  32  16  8   4   2   1         
  |   |   |   |   |   |   |   |
-128  64  32  16  8   4   2   1  
+ 1   1   0   0   0   0   0   0          
  |   |   |   |   |   |   |   |
- 1   1   0   0   0   0   0   0 
- |   |   |   |   |   |   |   |
-128+ 64+ 0+  0+  0+  0+  0+  0 = 192
+128+ 64+ 0+  0+  0+  0+  0+  0 = 192   ---> final value (firt octet IPv4 in decimal)
 
 ```
 * Take the IP: `192.168.64.3`
-* The first octet `192` in 8bit binary is `11000000`.
-* Only the `8th` and `7th` bit is "on", meaning the decimal value is the final sum of these values:  `128 + 64 = 192`
+* The first octet `192` in 8-bit binary is `11000000`.
+* Only the `8th` and `7th` bit is on and the rest of them (`6th to 1st bit`) is off, meaning the decimal value is the final sum of these values:  `128 + 64 = 192`
 
-⚠️ **Why? Computers see everything in terms of binary; true and false, on and off, 0 and 1.**
+⚠️ **Why? Computers see everything in terms of binaryll; on and off.**
 
 
 ## IPv4 and IPv6
@@ -178,12 +185,76 @@ NAT stands for network address translation. It’s a way to map multiple local p
 
 ![osi3](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/b9d7f33be654d299f6618feeacb97fc5fd5bd7d2/OSI_L3.png)
 
+# 3. Subnetting
+### Why subnetting?
+The way IP addresses are constructed makes it relatively simple for Internet routers to find the right network to route data into. However, in a Class A network (for instance), there could be millions of connected devices, and it could take some time for the data to find the right device. This is why subnetting comes in handy: subnetting narrows down the IP address to usage within a range of devices.
+
+Because an IP address is limited to indicating the network and the device address, IP addresses cannot be used to indicate which subnet an IP packet should go to. Routers within a network use something called a subnet mask to sort data into subnetworks.
+
+> ⚠️ Subnetting is really important for penetration testers and aspiring hackers, eventually you will face several cases involving small or large networks in your future engagements. Understanding the IP address type, range, available hosts is crucial for any network analysis.
+
+## Cheat sheet makes easier for subnetting
+
+![subnetting](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5ce4b7daa9c2c10ccd44675eadaceae646e487e2/cyber-mentor-subnetting.png)
+
+* CyberMentor Subnetting Sheet: https://twitter.com/thecybermentor/status/1211335431406727169
+
+* Subnetting Cheat sheet alternative: https://nsrc.org/workshops/2009/summer/presentations/day3/subnetting.pdf
+
+
+
+## Exercises:
+Subnetting comes in handy to awnser basic questions like:
+   - Identify the network and broadcast address
+   - How many hosts available in the network/hosts range?
+   - What masks allow the particular host?
+
+
+IP range | Subnet | Hosts | Network | Broadcast
+-|-|-|-|-
+192.168.1.16/28 | 255.255.255.240 | 14 | 192.168.1.16 | 192.168.1.31 
+192.168.0.0/22 | ? | ? | ? | ?
+
+- Take the `192.168.0.0/22` IP range listed above
+- You can easily figure out the subnet mask by look the cheat sheet, you can see the `252` column. Just replace the value of `x`. You will get `255.255.252.0`
+   - Subnet masks can be 0, 128, 192, 224, 240, 248, 252, 254 and 255. 
+   - To understand the basics of math behind the bits, check the next figure below:
+
+![bits](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/c1e01e29aedc394f2d75c4ccf57e72606775103a/bits.png)
+
+- The number of hosts is `2^(n) - 2`. 
+   - `n = off bits`
+   - In this case, is 2^10 = 1024 -> 1024 - 2 = `1022`
+- The network portion is the first and lowest possible value.
+- The broadcast is the last and highest possible value.
+
+IP range | Subnet | Hosts | Network | Broadcast
+-|-|-|-|-
+192.168.0.0/22 | 255.255.252.0 | 1022 | 192.168.0.0 | 192.168.3.255
+
+
+
+## Other relevant information about  IPs
+- **IPv4 Main Address Types**
+  - **Unicast** - acted on by a single recipient
+  - **Multicast** - acted on by members of a specific group
+  - **Broadcast** - acted on by everyone on the network
+    - **Limited** - delivered to every system in the domain (255.255.255.255)
+    - **Directed** - delivered to all devices on a subnet and use that broadcast address
+- **Subnet mask** - determines how many address available on a specific subnet
+  - Represented by three methods
+    - **Decimal** - 255.240.0.0
+    - **Binary** - 11111111.11110000.00000000.00000000
+    - **CIDR** - x.x.x.x/12   (where x.x.x.x is an ip address on that range)
+  - If all the bits in the host field are 1s, the address is the broadcast
+  - If they are all 0s, it's the network address
+  - Any other combination indicates an address in the range
+
 # MAC Addresses 
 
 -  MAC (Media Access Control) address is provided by NIC Card'd manufacturer and gives the physical address of a computer.
 
 ![macphys](https://i1.wp.com/learntomato.flashrouters.com/wp-content/uploads/MAC-address-hardware.jpg?resize=560%2C315&ssl=1)
-
 
 The first three bytes of a MAC address were originally known as **OUI’s, or Organizational Unique Identifiers.  Each manufacturer of networking equipment was assigned an OUI, and was free to assign their own numbers in that block.**
 
@@ -193,7 +264,6 @@ The first three bytes of a MAC address were originally known as **OUI’s, or Or
 ________ ________
 00:0c:29:99:98:ca
 ```
-
 ## Checking vendor behind MAC addresse
 1. Check your MAC address use the command `ifconfig` (Linux) or `/ipconfig` (Windows)
 ![mac](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/214242916f8947f09fc15d5bdde6a668fd4a4c1f/mac2.png)
@@ -210,7 +280,7 @@ ________ ________
 ### ⚠️ MAC Addresses operates on Layer 2 of OSI Model
 ![osil2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/b9d7f33be654d299f6618feeacb97fc5fd5bd7d2/OSI_L2.png)
 
-# 3. TCP/IP, UDP and 3-Way-Handshake
+# 4. TCP/IP, UDP and 3-Way-Handshake
 
 ## Transmission Control Protocol/Internet Protocol (TCP/IP)
 
@@ -235,7 +305,6 @@ TCP means Transmission Control Protocol, which is a communications standard for 
 
 TCP is the most commonly used of these protocols and accounts for the most traffic used on a TCP/IP network. **UDP is an alternative to TCP that does not provide error correction, is less reliable, and has less overhead, which makes it ideal for streaming.**
 
-
 ## The User Datagram Protocol (UDP)
 Is a lightweight data transport protocol that works on top of IP.
 UDP provides a mechanism to detect corrupt data in packets, but it does not attempt to solve other problems that arise with packets, such as lost or out of order packets. That's why UDP is sometimes known as the Unreliable Data Protocol.
@@ -249,7 +318,6 @@ UDP is simple but fast, at least in comparison to other protocols that work over
 
 ## The UDP format
 ![udp](https://cdn.kastatic.org/ka-perseus-images/9d185d3d44c7ef1e2cd61655e47befb4d383e907.svg)
-
 
 ## TCP Handshake
 
@@ -279,7 +347,7 @@ The three message mechanism is designed so that two computers that want to pass 
 
 ![wireshark](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5213becc28e3f9f46c976d05cd090ffd070ff5d1/wireshark0.png)
 
-# 4. Ports & Protocols
+# 5. Ports & Protocols
 ## What is a Port?
 In computer networking, a port is a communication endpoint. At the software level, within an operating system, a port is a logical construct that identifies a specific process or a type of network service.
 
@@ -328,26 +396,9 @@ As a penetration tester or ethical hacker you should be familiar with the common
     - **netstat -an** displays connections in numerical form
     - **netstat -b** displays executables tied to the open port (admin only)
 
-# 5. OSI Model
+# 6. OSI Model
 OSI Model is a hypothetical networking framework that uses specific protocols and mechanisms in every layer of it. This model is used to divide the network architecture into seven different layers conceptually. These layers are:
 
 ![osi-model](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/3e2dc59e7c341f4d79b2b93bac03fd8378c7ae3a/tcpmo.jpg)
 
 There also involves some security postures and mechanisms that a security professional must know to detect and put the security method effectively in every layer.
-
-# 6. Subnetting
-- **IPv4 Main Address Types**
-  - **Unicast** - acted on by a single recipient
-  - **Multicast** - acted on by members of a specific group
-  - **Broadcast** - acted on by everyone on the network
-    - **Limited** - delivered to every system in the domain (255.255.255.255)
-    - **Directed** - delivered to all devices on a subnet and use that broadcast address
-- **Subnet mask** - determines how many address available on a specific subnet
-  - Represented by three methods
-    - **Decimal** - 255.240.0.0
-    - **Binary** - 11111111.11110000.00000000.00000000
-    - **CIDR** - x.x.x.x/12   (where x.x.x.x is an ip address on that range)
-  - If all the bits in the host field are 1s, the address is the broadcast
-  - If they are all 0s, it's the network address
-  - Any other combination indicates an address in the range
-  - ![img](https://s3.amazonaws.com/prealliance-thumbnails.oneclass.com/thumbnails/001/751/775/original/stringio.txt?1513221790)
