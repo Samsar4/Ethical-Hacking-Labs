@@ -115,7 +115,7 @@ Once you have installed VirtualBox and downloaded the Kali Linux image, you just
 
 ![kali4](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5f7c4d496d67f429aff72c1c177028f16dc35379/pref5.png)
 
-5. **Type the default credentials:** username: `kali`, passowrd: `kali`. 
+5. **Type the default credentials:** username: `kali`, password: `kali`. 
     - Tip: On Linux, you can change the default password of the current user by typing `passwd` on terminal.
 
 ![kali5](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/5f7c4d496d67f429aff72c1c177028f16dc35379/kali-log.png)

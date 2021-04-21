@@ -28,7 +28,7 @@ First things first, you really need to understand how things work before start t
 **Core Knowledge provides a jumpstart to networking, systems, scripting and also information security topics. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
 
 * [Networking 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/0-Networking-101.md)
-* [Creating virtual labs](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md)
+* [Lab Building/Virtualization](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md)
 * [Linux for hackers]
 * [Scripting]
 * [Information Security 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/4-Infosec-101.md)
