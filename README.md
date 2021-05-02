@@ -3,33 +3,30 @@
 
 ![h](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/89f706846f97cd3e59880dbc03e4f1d5f8023783/header-ehl.jpg)
 
-This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the materials of CEH v10 content.
+This is a collection of tutorials and labs made for  ethical hacking students, cybersecurity students, network and sys-admins. These tutorials accompany the resources of CEH content and different resources across the internet.
 
 ⌨️ The tutorials is very practical/hands-on. Don't worry if you are a completely noob, you don't need to be an expert to start learn ethical hacking. **Google is always your best friend.** This repo will guide you very carefully from basics to more advanced techniques.
 
 **✅ Prerequisites**:
 * Any computer with at least 8GB RAM (16GB recommended)
+* At least 80GB of free disk space available
+* Hardware-based virtualization support
 
-**💭 To Do**:
-- ![](https://img.shields.io/badge/status-in%20progress-orange)
-- Add Foundational level modules (networking, lab build, linux kernel and scripting).
-- Bonus modules to add:
-    - Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))
-    - More Reconnaissance techniques.
-    - Active Directory: Lab build and attack vectors.
-    - Web application: Enumeration and exploitation using some OWASP Top 10 vulnerabilities and Bug Bounty techniques.
-    - Wireless hacking (WPA)
+* * *
+
+> **⚠️ Disclaimer**:
+*This is purely for educational purposes only. DO NOT try these techniques with any public network. Because if you are find guilty for causing any harm to any individual, government, corporate body, non-profit etc you will be sued with serious charges of cyber crime. I recommend you to practice the lessons in this course on your owned system and your own data in a private or local network.*
 
 * * * 
 
 ## ⚙️ Core Knowledge
-First things first, you really need to understand how things work before start to disassembly and look for vulnerable components. The more you understand how systems and networks works, a better hacker you'll be. The 'Core Knowledge' (module 0) is just a jumpstart to these topics.
+First things first, you really need to understand how things work before start to disassembly and look for vulnerable components. The more you understand how things works, a better hacker you'll be. The 'Core Knowledge' (module 0) is just a jumpstart to these topics.
 
-**Core Knowledge provides a jumpstart to networking, systems, scripting and also information security topics. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
+**Core Knowledge provides a jumpstart to networking, linux systems, virtualization, lab building, scripting and also information security topics. If you are familiar on these topics you can skip it straight to Ethical Hacking module.**
 
 * [Networking 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/0-Networking-101.md)
-* [Lab Building/Virtualization](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md)
-* [Linux for hackers]
+* [Lab Building / Virtualization](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md)
+* [Introduction to Linux](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/2-Intro-to-Linux.md)
 * [Scripting]
 * [Information Security 101](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/4-Infosec-101.md)
 
@@ -105,3 +102,15 @@ First things first, you really need to understand how things work before start t
     * [hdparm & dd command](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Using-hdparm-and-dd-command.md)
     * [Recovering a Deleted Partition](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Recovering-Deleted-Partition.md)
     * [Recovering Deleted Files](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/11-Bonus/Recovering-Deleted-Files.md)
+
+* * * 
+
+**💭 To Do**:
+- ![](https://img.shields.io/badge/status-in%20progress-orange)
+- Add Foundational level modules (~~networking~~, ~~virtualization~~, crypto, linux kernel and scripting).
+- Bonus modules to add:
+    - ~~Introduction to Infosec terms and methodologies (from [CEH Study Guide](https://github.com/Samsar4/CEH-v10-Study-Guide))~~
+    - More Reconnaissance techniques.
+    - Active Directory: Lab build and attack vectors.
+    - Web application: Enumeration and exploitation using some OWASP Top 10 vulnerabilities and Bug Bounty techniques.
+    - Wireless hacking (WPA)
