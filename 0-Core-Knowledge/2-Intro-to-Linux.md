@@ -1,8 +1,8 @@
 # Introduction to Linux 🐧
 
 ### Requirements 
-* Ubuntu virtual machine (or any disto desktop general-purpose like Manjaro, Fedora etc)
-* Kali Linux virtual machine
+* Ubuntu virtual machine (or any disto desktop general-purpose like Manjaro, Fedora etc) (1)
+* Kali Linux virtual machine (2)
 
 
 ### Objectives
@@ -13,11 +13,11 @@
 
 **Before jumpstart into Kali Linux tutorial, it is recommended to use a desktop general-purpose distro like [Ubuntu](https://ubuntu.com/download/desktop) or [Manjaro](https://manjaro.org/download/) for learning the basics and get used to, also you can check the [DistroWatch](https://distrowatch.com/) to find a good distro to start with.**
  
-1. The first part of this tutorial uses **Ubuntu** VM to explain the basics of Linux environment, basic commands and techniques.
+1. __**The first part**__ of this tutorial uses **Ubuntu** VM to explain the basics of Linux environment, basic commands and techniques.
 
-2. The second part is about **Kali Linux** itself, covering security tools and using more advanced techniques.
+2. __**The second part**__ is about **Kali Linux** itself, covering security tools using more advanced techniques.
 
-> **⚠️ Warning:** Kali is a Linux distribution specifically geared towards professional penetration testers and security specialists, and given its unique nature, **it is NOT recommended to use as a general-purpose Linux desktop for development, web design, gaming, etc.** 
+> **⚠️ Warning:** *Kali is a Linux distribution specifically geared towards professional penetration testers and security specialists, and given its unique nature, **it is NOT recommended to use as a general-purpose Linux desktop for development, web design, gaming, etc.*** 
 
 # Why Linux so Popular?
 
@@ -34,17 +34,128 @@
 - The Linux terminal is superior to use over Window’s command line for developers. You would find many libraries developed natively for Linux. Also according to many developers, Linux helps the, get things done easily.
 Linux doesn’t encounter a large number of software updates, but you will also observe much faster software updates so that the problems you might be facing can be eliminated.
 
-# Setting up
-First things first, you should download and deploy two virtual machines: Ubuntu Linux and Kali Linux. 
+# Setting up 🧰
+First things first, you should download and deploy two virtual machines: **Ubuntu Linux** and **Kali Linux**. 
 
-The recommended configuration for Ubuntu VM is 2GB to 3GB RAM and at least 4GB of RAM to Kali. **To makes things easier you can leave the default configuration for both machines, the purpose of this tutorial is practice and explore basic concepts.**
+The recommended configuration for Ubuntu VM is 2GB to 3GB RAM and at least 4GB of RAM to Kali. **To makes things easier you can leave the default configuration for both machines.**
 
-- [Ubuntu official website download](https://ubuntu.com/download/desktop)
-- [Kali Linux official website download](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/#1572305786534-030ce714-cc3b)
+- [Ubuntu official website](https://ubuntu.com/download/desktop)
+- [Kali Linux official website](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/#1572305786534-030ce714-cc3b)
+
+**Note**: If you don't know how to setup your VMs you can check the [previous module on lab building](https://github.com/Samsar4/Ethical-Hacking-Labs/blob/master/0-Core-Knowledge/1-Lab-Building.md) or more specifically a tutorial on [how to setup Ubuntu VM](https://www.makeuseof.com/install-ubuntu-virtualbox/).
 
 # Diving into Ubuntu
 
+At this point you should be familiar with a basic operating system such as Windows and the various programs that are already available on the Windows operating system. Ubuntu is no different, this linux distro is a very straightforward, stable and easy to use OS for newcomers, after the installation you're ready to go and explore.
 
+![ubunut1](https://i0.wp.com/9to5linux.com/wp-content/uploads/2020/08/ubuntu20041.jpg?fit=800%2C600&ssl=1)
+
+
+**Note**: This tutorial will teach you **how to operate Linux by command line** not the interface. Technically you can do some tasks by using the interface, but I encourange to do as much you can on CLI (command line interface) and this tutorial will guide through this. By this way you can have a granular control to handle the system.
+
+* Fire up your Ubuntu VM and explore by yourself the interface, pre-installed applications and configurations.
+![ubuntu2](https://techlatest.b-cdn.net/wp-content/uploads/2020/04/ubuntu-20.04-app-folders-1536x864-1-1024x576.jpg)
+
+## UI vs. CLI
+This example will compare the differences between UI(user interface) and CLI(command line interface) by performing a simple task: 
+   - create a text file, write some words and save it.
+
+This is just a simple example to grasp the idea behind command line. 
+
+1. First, let's create a text file using the interface. Click on the 6 dotted button on the bottom right **(Show Applications)** and open the **Text Editor application**
+
+![ub1](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/0490dd84d2611a7ed0631a21f851cc244f80ba4d/ub1.png)
+
+2. Write **hello world** on the new file, and then save in your Desktop by giving the name **hello.txt**
+
+![ub2](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/0490dd84d2611a7ed0631a21f851cc244f80ba4d/ub2.png)
+
+3. Now, click again the 6 dotted button to show all applications and open a new **Terminal** window
+
+4. To navigate to your desktop by using the terminal, type `cd Desktop`. Next type `echo hello world > hello2.txt`.
+   - `cd` command means change directory. The next command will `echo` the string `hello world` and the symbol `>` tells the system to output results into a new file, the target is usually a filename (`hello2.txt`).
+
+![ub3](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/0490dd84d2611a7ed0631a21f851cc244f80ba4d/ub3.png)
+
+5. As you can see on the image below, the both methods perform the same results.
+
+![ub4](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/0490dd84d2611a7ed0631a21f851cc244f80ba4d/ub4.png)
+
+
+**Bottom line**, command line is the most powerful way to operate a Linux machine, you can leverage the granular control of Linux systems and do pretty much everything from command line in more robust, fast and efficient way. For example you can rename thousands of files with a simple one-liner command, instead of renaming one by one using UI. You can automate tasks, manage networks etc and do much more using the terminal.
+
+# Linux structure
+In Windows, the root begins at the drive letter, usually C:\, which basically means it begins at the hard drive. In Linux however, the root of the filesystem doesn’t correspond with a physical device or location, it’s a logical location of simply “/”. See the graphics below for a visual representation.
+
+To access the root of the filesystem, you can type `cd` to change directory following the destination `/` , representing the begining of the filesystem.
+   - `cd /`
+
+```
+ubuntu@primary:/home$ cd /
+Users  boot  etc   lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+bin    dev   home  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+```
+
+To understand the basics of each folder in the Linux file system is for, which will help us to better understand how Linux works in general. Note that not every folder listed here or pictured below necessarily appears in every Linux distro, but most of them do.
+
+![structure](https://gist.githubusercontent.com/Samsar4/62886aac358c3d484a0ec17e8eb11266/raw/4d8d864d53230f3aa14495d486fd01274a54aec0/linux-structure.png)
+
+# Core commands
+The core commands will explore the most important user and system commands.
+
+> ⚠️  Remember that every command have a manual page, you can access on [this website](https://linux.die.net/man/) or directly from terminal by typing: `man <command>`
+
+### `sudo` 
+Sudo stands for SuperUser DO and is used to access restricted files and operations. By default, Linux restricts access to certain parts of the system preventing sensitive files from being compromised.
+
+The sudo command temporarily elevates privileges allowing users to complete sensitive tasks without logging in as the root user.
+
+1. **For example, lets try to update the Ubuntu packages without `sudo` command. To do that you can simple issue the `apt-get update` command and hit enter.**
+
+```
+purple@purple-vm:~$ apt-get update
+
+Reading package lists... Done
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+```
+As you can see above we got the **"13:  Permission denied" error**, meaning that we need root privileges to update Ubuntu packages.
+
+2. **Next, issue the command with elevated privileges (root) using `sudo`. The command will be successfully executed.**
+
+```
+purple@purple-vm:~$ sudo apt-get update
+[sudo] password for purple: 
+Hit:1 http://pt.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://pt.archive.ubuntu.com/ubuntu focal-updates InRelease                     
+Hit:3 http://pt.archive.ubuntu.com/ubuntu focal-backports InRelease                   
+Hit:4 https://brave-browser-apt-release.s3.brave.com stable InRelease                 
+Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease                      
+Reading package lists... Done
+```
+
+Also we have other `apt-get` variants:
+   - `apt-get upgrade` ->  simply upgrades/installs the new version of the package available over the old one.
+   - `apt-get dist-upgrade` -> This command looks for newer dependencies and prioritizes upgrading them by the possibility of removing the old ones – which could be dangerous. Make sure to read the [official documentation](https://linux.die.net/man/8/apt-get) before issue this command.
+
+3. **You also can switch to root user by using `su`. But is not recommended to operate as root as a security practice. Applications are meant to be run with non-administrative security, so you have to elevate their privileges to modify the underlying system.**
+
+```
+purple@purple-vm:~$ sudo su
+[sudo] password for purple: 
+root@purple-vm:/home/purple# 
+```
+As you can see, the user purple jumped to root user by using su.
+
+### `pwd`
+`pwd` stands for **P**rint **W**orking **D**irectory. It prints the path of the current directory that you are in, starting from the root.
+
+```
+purple@purple-vm:~$ pwd
+/home/purple/work/code
+```
 ## Linux Permissions 
 
 Linux has three permissions and they can be set for the owner, group or other.
@@ -141,7 +252,7 @@ ls -l
 ``` 
 
 
-## Using `chmod` on oldschool way:
+## Using `chmod` - oldschool way:
 The chmod command will take the octal value and combine them to associate the permissions on three different positions for the Owner, Group and Other/Everyone. This boils down to a simple binary rule: 0 = off | 1 = on.
 
 Octal | Binary | Permissions
@@ -234,13 +345,14 @@ ls -l
 *The chown command requires sudo*
 
 
-### Linux - Changing the Password using `passwd`
+### `passwd`
 
+Changes the password of current user 
 ```console
 sudo passwd
 ```
 
-# Basic Commands
+## Network commands
 
 ### `ping`
 * Can be handful for DNS checks (up / or down) | is a DNS tool to resolves web addresses to an IP address.
@@ -491,11 +603,11 @@ PORT      STATE SERVICE    VERSION
 31337/tcp open  tcpwrapped
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ...
-
 ```
 
----
-notes 
+# [in progress]
+
+to do notes 
 
 1) Ubuntu - basics
     - about Linux
@@ -509,5 +621,5 @@ notes
 
 3) Bonus part
     - tmux, vim.
-    - cool commands like weather, neofetch
+    - cool commands like terminal weather, neofetch
 ---
