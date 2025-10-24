@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack with Dice - Learning Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Marked.js for Markdown parsing -->
+    <script src="libs/marked.min.js"></script>
+    <!-- Highlight.js for code syntax highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <button id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <h1>Hack with Dice</h1>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar" id="sidebar">
+        <nav>
+          <div class="search-container">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search lessons..."
+              aria-label="Search lessons"
+            />
+            <div id="search-results" class="search-results">
+              <!-- Search results will appear here -->
+            </div>
+          </div>
+          <h2>Lessons</h2>
+          <div class="lesson-list">
+            <!-- Lessons will be loaded here dynamically -->
+          </div>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article id="lesson-content">
+          <!-- Markdown content will be rendered here -->
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="copyright">© 2025 7bmedia</div>
+        <div class="footer-links">
+          <a
+            href="https://github.com/7bdollz/Ethical-Hacking-Labs"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+        <div class="footer-credits">
+          <p>
+            Created with ❤️ by Dice, resources from
+            <a href="https://twitter.com/s4msar4">SAMSARA FM</a>/
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
