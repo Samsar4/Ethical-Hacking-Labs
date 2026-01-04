@@ -1,0 +1,366 @@
+:root {
+  --primary-color: #cc0000;
+  --secondary-color: #666;
+  --background-color: #ffffff;
+  --sidebar-width: 300px;
+  --header-height: 60px;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  --content-width: min(900px, 90vw);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: #333;
+  background: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.main-header {
+  background: var(--background-color);
+  height: var(--header-height);
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+
+#sidebar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Container & Layout */
+.container {
+  display: flex;
+  margin-top: var(--header-height);
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: var(--sidebar-width);
+  background: #f8f9fa;
+  border-right: 1px solid #eee;
+  padding: 20px;
+  height: calc(100vh - var(--header-height));
+  position: fixed;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  left: 0;
+  top: var(--header-height);
+}
+
+.search-container {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(204, 0, 0, 0.1);
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none;
+}
+
+.search-results.active {
+  display: block;
+}
+
+.search-result-item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f8f9fa;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-section {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.search-result-title {
+  color: #333;
+  font-weight: 500;
+}
+
+.no-results {
+  padding: 1rem;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+}
+
+.sidebar h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.lesson-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lesson-list a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.lesson-list a:hover {
+  background: #eee;
+  color: var(--primary-color);
+}
+
+.lesson-list a.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem;
+  width: auto;
+  max-width: var(--content-width);
+  margin: 0 auto 0 var(--sidebar-width);
+  padding-bottom: 3rem; /* space so content doesn't touch footer */
+}
+
+/* Markdown Content Styling */
+#lesson-content {
+  line-height: 1.8;
+}
+
+#lesson-content h1 {
+  color: var(--primary-color);
+  margin-bottom: 1em;
+}
+
+#lesson-content h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #444;
+}
+
+#lesson-content p {
+  margin-bottom: 1em;
+}
+
+#lesson-content code {
+  background: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+}
+
+#lesson-content pre {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+#lesson-content ul,
+#lesson-content ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  font-weight: 500;
+}
+
+.footer-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #990000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#lesson-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 280px;
+  }
+
+  #sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 900;
+    width: min(var(--sidebar-width), 80vw);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 1rem;
+    width: 100vw;
+  }
+
+  .main-header {
+    padding: 0 1rem;
+  }
+
+  #lesson-content {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #lesson-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #lesson-content pre {
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --sidebar-width: 250px;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: var(--secondary-color);
+}
