@@ -1,5 +1,5 @@
 # Networking 101
-> ⚠ Networking 101 is a simple introduction to the most important network concepts for ethical hacking. This is a huge subject and is recommended to learn from different sources like courses, books and certifications like [Cisco CCNA](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html) or [CompTIA Network+](https://www.comptia.org/certifications/network). Also there is a ton of **free training** out there, I recommend to [check this list](https://freetraining.dfirdiva.com/free-networking-training) later.
+> ⚠ Networking 101 is a simple introduction to the most important network concepts for ethical hacking. This is a huge subject and is recommended to learn from different sources like courses, books and certifications like [Cisco CCNA](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html) or [CompTIA Network+](https://www.comptia.org/certifications/network). Also there is a ton of **free training** out there, I recommend to [check this list](https://training.dfirdiva.com/free-affordable-training-categories) later.
 
 ### Objectives
 * Understand network basic concepts 
